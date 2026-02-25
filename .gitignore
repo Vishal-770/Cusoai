@@ -1,0 +1,73 @@
+# ─── Virtual Environment ─────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ─── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+*.spec
+.Python
+
+# ─── Jupyter Notebooks ───────────────────────────────────────────────────────
+# Keep source notebooks, ignore executed/checkpoint copies
+notebooks/.ipynb_checkpoints/
+notebooks/*_executed.ipynb
+.ipynb_checkpoints/
+*_executed.ipynb
+
+# ─── Data Files (large / sensitive) ─────────────────────────────────────────
+# Raw datasets (too large for git — use DVC or share via link)
+data/raw/
+data/*.csv
+data/*.parquet
+data/*.pkl
+data/*.h5
+data/*.json
+
+# Keep: processed light files & plots
+!data/plots/
+!data/kb/
+# Note: tickets_processed.csv is also large — excluded
+data/tickets_processed.csv
+
+# ─── Embeddings & Model Artifacts ───────────────────────────────────────────
+embeddings/
+models/
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+faiss_index/
+chroma_db/
+
+# ─── Environment & Secrets ───────────────────────────────────────────────────
+.env
+.env.*
+*.key
+secrets.json
+config/secrets.yaml
+
+# ─── OS & Editor ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ─── Logs & Temp ─────────────────────────────────────────────────────────────
+logs/
+*.log
+tmp/
+temp/
+.cache/
