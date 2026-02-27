@@ -18,8 +18,10 @@ import evaluate
 import os
 
 # 2. Define exactly where your files are uploaded
-# IMPORTANT: Check the exact path under "Input" on the right sidebar in Kaggle!
-DATA_DIR = "/kaggle/input/vishal-support-tickets-200k" 
+# IMPORTANT: Upload the files from data/processed_50k/ to Kaggle.
+# Then copy the exact path from the Input sidebar in Kaggle!
+# Example: DATA_DIR = "/kaggle/input/YOUR-DATASET-NAME"
+DATA_DIR = "/kaggle/input/datasets/lazer7707/vishal-support-tickets-50k" 
 
 print("Loading Dataset from cloud storage...")
 dataset = load_dataset("csv", data_files={
@@ -27,8 +29,13 @@ dataset = load_dataset("csv", data_files={
     "validation": f"{DATA_DIR}/val.csv"
 })
 
-# 3. Define mapping (From text names to model numbers)
-categories = ['Refund', 'Login', 'Delivery', 'Billing', 'Account', 'Other']
+# 3. Define mapping (From text categories to model numbers)
+# We have 10 categories as decided in our analysis
+categories = [
+    'Account Suspension', 'Performance Issue', 'Subscription Cancellation',
+    'Feature Request', 'Payment Problem', 'Security Concern', 
+    'Refund Request', 'Login Issue', 'Bug Report', 'Data Sync Issue'
+]
 label2id = {label: i for i, label in enumerate(categories)}
 id2label = {i: label for i, label in enumerate(categories)}
 
@@ -50,8 +57,15 @@ def tokenize_function(examples):
      # Max length 256 prevents Out Of Memory (OOM) errors on 16GB GPUs
     return tokenizer(examples['issue_description'], padding="max_length", truncation=True, max_length=256)
 
-print("Tokenizing the 200,000 tickets... (This takes a few minutes)")
-tokenized_datasets = dataset.map(tokenize_function, batched=True)
+print("Tokenizing and cleaning dataset... (Removing string columns)")
+# 5. Tokenization and Column Removal
+# We MUST remove the raw string columns (like 'issue_description' and 'category')
+# Otherwise, the Trainer might fail to pass 'labels' to the model on multi-GPU.
+tokenized_datasets = dataset.map(
+    tokenize_function, 
+    batched=True,
+    remove_columns=dataset["train"].column_names 
+)
 
 
 # 5. Initialize the Model
@@ -71,10 +85,10 @@ training_args = TrainingArguments(
     per_device_eval_batch_size=16,
     num_train_epochs=3,                   # 3 Epochs is sufficient for a 200k dataset
     weight_decay=0.01,
-    evaluation_strategy="epoch",
+    eval_strategy="epoch",
     save_strategy="epoch",
     load_best_model_at_end=True,
-    fp16=True,                            # CRITICAL: Use Mixed Precision to save GPU RAM
+    fp16=False,                           # T4 GPUs don't support bf16; use full Float32
     report_to="none"                      # Disables Weights & Biases logging prompts
 )
 
@@ -91,7 +105,7 @@ trainer = Trainer(
     args=training_args,
     train_dataset=tokenized_datasets["train"],
     eval_dataset=tokenized_datasets["validation"],
-    tokenizer=tokenizer,
+    processing_class=tokenizer,
     compute_metrics=compute_metrics,
 )
 

@@ -1,0 +1,230 @@
+__label__Payment_Problem please help my annual plan renewal was charged at the wrong tier price
+__label__Data_Sync_Issue synchronisation between desktop and cloud is failing with a network error and it has been happening for several days
+__label__Subscription_Cancellation we want to cancel but retain access to our data for 30 days is that possible
+__label__Performance_Issue please help processing large datasets through the batch api causes timeout errors
+__label__Login_Issue login page throws a 500 internal server error intermittently this is urgent
+__label__Security_Concern we received a two factor code we did not request someone is attempting access
+__label__Bug_Report the application crashes whenever i try to upload a file
+__label__Bug_Report multiple currency symbols appear on the invoice pdf generation bug this is urgent
+__label__Data_Sync_Issue cloud sync button does nothing when i press it no progress indicator i need this resolved as soon as possible
+__label__Account_Suspension the suspension was applied to the wrong account please check your records
+__label__Payment_Problem subscription charges are appearing twice on our monthly bank statement
+__label__Login_Issue two factor authentication is not sending the verification code to my phone thank you
+__label__Subscription_Cancellation i cancelled online but the system shows my subscription as still active this is causing me significant inconvenience
+__label__Bug_Report the export to csv feature is completely broken it produces an empty file i need this resolved as soon as possible
+__label__Refund_Request i need a refund because your platform broke our workflow and we had to switch this is causing me significant inconvenience
+__label__Refund_Request i was charged after cancellation i want a full refund for this charge thank you
+__label__Refund_Request the product did not meet my expectations please issue a refund as per your guarantee
+__label__Bug_Report the bulk delete function deletes one extra record beyond the selection
+__label__Data_Sync_Issue synchronisation between desktop and cloud is failing with a network error i need this resolved as soon as possible
+__label__Subscription_Cancellation please help my subscription auto renewed i missed the window what are my options
+__label__Refund_Request refund request number 45892 has been pending for two weeks with no update this is urgent
+__label__Account_Suspension account restricted and suspended without any warning email or banner thank you
+__label__Account_Suspension account suspension message appears but support chat also logs me out immediately
+__label__Subscription_Cancellation hello my subscription was cancelled without my request and i need clarification
+__label__Refund_Request the service was unavailable for three days i am requesting a prorated refund thank you
+__label__Subscription_Cancellation cancellation confirmation email never arrived is my subscription actually cancelled this is causing me significant inconvenience
+__label__Refund_Request i need a refund because your platform broke our workflow and we had to switch i need this resolved as soon as possible
+__label__Data_Sync_Issue please help real time data sync is delayed by several hours my team sees stale data
+__label__Subscription_Cancellation please help i want to downgrade not cancel but the cancel flow offers no downgrade option
+__label__Performance_Issue file uploads are very slow ten megabytes takes five minutes to upload i need this resolved as soon as possible
+__label__Refund_Request i cancelled my subscription within the refund window this is urgent please process my refund this is urgent
+__label__Subscription_Cancellation cancellation pending for a week with no status update in the portal thank you
+__label__Bug_Report logo image is not rendering in email templates showing as broken image i need this resolved as soon as possible
+__label__Bug_Report the mobile app crashes on startup since the latest update thank you
+__label__Security_Concern suspicious transactions on my account my payment info may have been stolen thank you
+__label__Performance_Issue cpu usage on our server spikes to 100 percent whenever the app is running
+__label__Refund_Request i was offered a discount and charged full price instead and it has been happening for several days requesting refund of difference and it has been happening for several days
+__label__Security_Concern account recovery codes for other users are showing up in my settings this is urgent
+__label__Subscription_Cancellation hello i would like to cancel my subscription at the end of this billing period
+__label__Data_Sync_Issue please help third party integration stopped syncing new records automatically
+__label__Performance_Issue autocomplete search is laggy this is urgent there is a three second delay as i type this is urgent
+__label__Bug_Report import wizard freezes at step three when file size exceeds five megabytes
+__label__Performance_Issue cpu usage on our server spikes to 100 percent whenever the app is running thank you
+__label__Account_Suspension hello two of our 50 seats have been suspended randomly not clear why
+__label__Login_Issue login with microsoft azure ad returns a redirect loop i cannot access my account
+__label__Data_Sync_Issue third party integration stopped syncing new records automatically this is causing me significant inconvenience
+__label__Refund_Request annual plan was purchased on wrong account please refund and allow me to repurchase
+__label__Account_Suspension two of our 50 seats have been suspended randomly this is urgent not clear why this is urgent
+__label__Refund_Request the annual subscription was auto renewed without notice please refund it
+__label__Refund_Request the service did not work as advertised i would like to request a full refund thank you
+__label__Account_Suspension i was suspended while on holiday this is urgent i need immediate account reinstatement this is urgent
+__label__Refund_Request refund approved by your agent last week has still not appeared on my card
+__label__Bug_Report found a bug where duplicate entries are created when submitting a form twice this is causing me significant inconvenience
+__label__Account_Suspension account shows as suspended even though i received no email notification i need this resolved as soon as possible
+__label__Performance_Issue database queries through your api are timing out after 10 seconds this is causing me significant inconvenience
+__label__Payment_Problem my bank declined the charge but the order still shows as payment pending
+__label__Data_Sync_Issue sync is overwriting newer data with older versions from another device this is urgent
+__label__Refund_Request accidentally purchased an add on we do not need can we get a refund
+__label__Refund_Request i downgraded my plan mid cycle please refund the unused prorated amount
+__label__Feature_Request would love to see a live chat widget that can be embedded on our website i need this resolved as soon as possible
+__label__Performance_Issue hello the live preview feature is unresponsive when the document has many images
+__label__Data_Sync_Issue changes on one device do not appear on other devices sync is broken this is causing me significant inconvenience
+__label__Login_Issue password field is not accepting special characters login is blocked
+__label__Payment_Problem my colleague updated their card expiry date but payment still failed on auto renewal
+__label__Subscription_Cancellation i was told cancellation takes effect immediately but i am still being billed thank you
+__label__Performance_Issue api response times have degraded significantly since your last deployment i need this resolved as soon as possible
+__label__Account_Suspension account suspended for inactivity but i just used it last week
+__label__Data_Sync_Issue database sync shows completed but the updated records are not visible this is urgent
+__label__Security_Concern i believe my account has been hacked i see logins from unknown locations
+__label__Subscription_Cancellation i want to cancel but retain access to my data for 30 days is that possible i need this resolved as soon as possible
+__label__Refund_Request i was offered a discount and charged full price instead this is urgent requesting refund of difference this is urgent
+__label__Refund_Request the service did not work as advertised i would like to request a full refund
+__label__Security_Concern i noticed an admin user was added to our organisation that i did not authorise
+__label__Security_Concern we believe our account has been hacked we see logins from unknown locations
+__label__Data_Sync_Issue two way sync is creating duplicate entries over 500 duplicates in my account i need this resolved as soon as possible
+__label__Bug_Report there is a visual glitch in the charts after resizing the browser window
+__label__Login_Issue my colleague cannot sign in the error says their account does not exist
+__label__Account_Suspension my account was suspended due to non payment but we paid on time last week
+__label__Data_Sync_Issue api webhook for sync stopped firing three days ago without any change on our side
+__label__Account_Suspension please help my enterprise account is suspended and our business operations are halted
+__label__Feature_Request requesting the ability to pin important support articles to the top of search
+__label__Payment_Problem my paypal payment was deducted but the subscription was not activated this is urgent
+__label__Security_Concern i can see other customers files in my account and it has been happening for several days possible data breach and it has been happening for several days
+__label__Refund_Request requesting refund for march invoice and it has been happening for several days i downgraded in february but was still charged and it has been happening for several days
+__label__Login_Issue please help the forgot password email is not arriving i have checked my spam folder
+__label__Feature_Request hello please add audit logs so administrators can track all user actions
+__label__Account_Suspension my enterprise account is suspended and our business operations are halted
+__label__Security_Concern we received a phishing email claiming to be from your company please investigate
+__label__Performance_Issue page rendering sometimes completely times out
+__label__Refund_Request annual plan was purchased on wrong account please refund and allow me to repurchase thank you
+__label__Login_Issue i am unable to access my account after entering the correct credentials this is causing me significant inconvenience
+__label__Subscription_Cancellation i need to cancel before the annual renewal date which is in two days i need this resolved as soon as possible
+__label__Security_Concern brute force login attempts targeting my account happened 200 times overnight i need this resolved as soon as possible
+__label__Feature_Request would love to see a live chat widget that can be embedded on our website thank you
+__label__Subscription_Cancellation i would like to cancel my subscription at the end of this billing period thank you
+__label__Performance_Issue search queries take ten seconds on data that previously returned instantly
+__label__Feature_Request we need the ability to assign tickets to multiple agents simultaneously and it has been happening for several days
+__label__Data_Sync_Issue sync between staging and production environments is mirroring wrong data this is causing me significant inconvenience
+__label__Performance_Issue the platform response time is over five seconds during normal business hours thank you
+__label__Account_Suspension i was suspended while on holiday i need immediate account reinstatement
+__label__Bug_Report report generation is stuck at zero percent and never completes i need this resolved as soon as possible
+__label__Payment_Problem the promo code was applied but i was still charged the full amount this is causing me significant inconvenience
+__label__Account_Suspension hello my account was suspended due to non payment but i paid on time last week
+__label__Performance_Issue webhook delivery is lagging by 10 minutes and it has been happening for several days near real time is needed and it has been happening for several days
+__label__Bug_Report please help import wizard freezes at step three when file size exceeds five megabytes
+__label__Login_Issue hello i cannot log into my account my credentials are correct but it says invalid password
+__label__Login_Issue session expires after five minutes and forces me to log in repeatedly
+__label__Subscription_Cancellation please help the cancel button on the billing page does nothing when i click it
+__label__Refund_Request i need a refund for a transaction that i did not authorise thank you
+__label__Subscription_Cancellation hello cancel my subscription and confirm in writing that no further charges will occur
+__label__Payment_Problem i paid via bank transfer 5 days ago but the invoice still shows outstanding and it has been happening for several days
+__label__Login_Issue i get kicked to the login page every few minutes even while actively working and it has been happening for several days
+__label__Login_Issue the login button does nothing when i click it on the mobile browser this is causing me significant inconvenience
+__label__Security_Concern security scan found our credentials in a known breach database need help thank you
+__label__Security_Concern i received a phishing email claiming to be from your company and it has been happening for several days please investigate and it has been happening for several days
+__label__Security_Concern i received a phishing email claiming to be from your company please investigate this is causing me significant inconvenience
+__label__Bug_Report the api returns a 500 error when pagination exceeds one hundred records this is causing me significant inconvenience
+__label__Feature_Request feature request custom branding with our company logo on the customer portal
+__label__Feature_Request requesting an undo feature for bulk operations in case of accidental changes
+__label__Bug_Report logo image is not rendering in email templates showing as broken image
+__label__Refund_Request i cancelled before the trial ended but was still charged the full month i need this resolved as soon as possible
+__label__Payment_Problem i paid via bank transfer 5 days ago but the invoice still shows outstanding thank you
+__label__Performance_Issue hello the platform is extremely slow during peak hours affecting our productivity
+__label__Account_Suspension my company account got suspended after admin user was changed i need this resolved as soon as possible
+__label__Data_Sync_Issue the sync process hangs at 50 percent and never finishes this is urgent
+__label__Performance_Issue high latency on all api calls since eight this morning and it has been happening for several days is there an outage
+__label__Account_Suspension account suspended for inactivity but we just used it last week
+__label__Payment_Problem direct debit failed but i received no notification account was deactivated thank you
+__label__Bug_Report hello the application crashes whenever i try to upload a file
+__label__Bug_Report hello the dashboard graph renders incorrectly in safari browser
+__label__Account_Suspension account shows as suspended even though i received no email notification thank you
+__label__Feature_Request please help requesting the ability to pin important support articles to the top of search
+__label__Performance_Issue report export takes 45 minutes it used to be under a minute
+__label__Login_Issue password field is not accepting special characters login is blocked and it has been happening for several days
+__label__Refund_Request the subscription i renewed has not been activating features this is urgent please refund this is urgent
+__label__Account_Suspension my account has been suspended without any prior warning please reinstate it i need this resolved as soon as possible
+__label__Subscription_Cancellation our company is switching vendors please cancel all seats effective immediately thank you
+__label__Account_Suspension my colleague appealed the suspension three days ago and have heard nothing back
+__label__Refund_Request accidentally purchased an add on i do not need can i get a refund thank you
+__label__Security_Concern a sql injection attempt is visible in our application logs this is urgent
+__label__Login_Issue password field is not accepting special characters login is blocked this is urgent
+__label__Payment_Problem subscription charges are appearing twice on my monthly bank statement thank you
+__label__Security_Concern our company data appears to be accessible to unauthorised users thank you
+__label__Bug_Report please help sorting by date column produces incorrect order every third page
+__label__Feature_Request requesting the ability to pin important support articles to the top of search
+__label__Refund_Request please help refund request number 45892 has been pending for two weeks with no update
+__label__Payment_Problem hello i updated my card expiry date but payment still failed on auto renewal
+__label__Login_Issue the login page keeps loading indefinitely and never redirects me to the dashboard i need this resolved as soon as possible
+__label__Subscription_Cancellation i cancelled the primary account but sub accounts are still being charged this is urgent
+__label__Payment_Problem the invoice pdf is blank when i try to download it from the billing portal and it has been happening for several days
+__label__Refund_Request i purchased the wrong plan by mistake this is urgent can i get a refund and upgrade instead
+__label__Payment_Problem the payment was deducted from my bank account but the transaction shows failed this is urgent
+__label__Bug_Report sorting by date column produces incorrect order every third page and it has been happening for several days
+__label__Performance_Issue search queries take ten seconds on data that previously returned instantly
+__label__Feature_Request please add audit logs so administrators can track all user actions this is urgent
+__label__Refund_Request hello requesting refund for march invoice i downgraded in february but was still charged
+__label__Data_Sync_Issue hello contacts added on mobile are not appearing on desktop after sync
+__label__Account_Suspension please help suspension is affecting my ability to meet a client deadline urgent
+__label__Bug_Report please help dropdown menu disappears before i can select an option on mobile
+__label__Data_Sync_Issue offline changes are not uploading when i reconnect to the internet i need this resolved as soon as possible
+__label__Bug_Report the mobile app crashes on startup since the latest update
+__label__Refund_Request annual plan was purchased on wrong account please refund and allow me to repurchase
+__label__Login_Issue login page throws a 500 internal server error intermittently
+__label__Refund_Request annual plan was purchased on wrong account please refund and allow me to repurchase this is causing me significant inconvenience
+__label__Data_Sync_Issue synchronisation between desktop and cloud is failing with a network error this is causing me significant inconvenience
+__label__Security_Concern we noticed an admin user was added to our organisation that we did not authorise
+__label__Subscription_Cancellation i need to cancel before the annual renewal date which is in two days
+__label__Security_Concern i got an email saying my account details were changed but i did not do it thank you
+__label__Feature_Request requesting an undo feature for bulk operations in case of accidental changes i need this resolved as soon as possible
+__label__Account_Suspension account suspended for inactivity but i just used it last week i need this resolved as soon as possible
+__label__Feature_Request feature suggestion allow custom fields in the ticket submission form
+__label__Login_Issue i am unable to access my account after entering the correct credentials
+__label__Login_Issue cannot log in on ios safari works fine on desktop chrome this is causing me significant inconvenience
+__label__Payment_Problem please help my credit card was charged twice for the same invoice please issue a credit
+__label__Payment_Problem my bank declined the charge but the order still shows as payment pending this is urgent
+__label__Subscription_Cancellation my colleague need to cancel before the annual renewal date which is in two days
+__label__Login_Issue the login page keeps loading indefinitely and never redirects me to the dashboard and it has been happening for several days
+__label__Login_Issue login page throws a 500 internal server error intermittently thank you
+__label__Security_Concern i noticed an admin user was added to our organisation that i did not authorise i need this resolved as soon as possible
+__label__Performance_Issue database queries through your api are timing out after 10 seconds and it has been happening for several days
+__label__Security_Concern our company data appears to be accessible to unauthorised users this is urgent
+__label__Security_Concern account recovery codes for other users are showing up in my settings i need this resolved as soon as possible
+__label__Feature_Request i would love a bulk csv import feature it would save hours of manual work i need this resolved as soon as possible
+__label__Bug_Report sorting by date column produces incorrect order every third page this is causing me significant inconvenience
+__label__Payment_Problem payment receipt email never arrived after a successful transaction
+__label__Payment_Problem transaction was approved by their bank but your system shows it as failed
+__label__Account_Suspension my account was suspended due to non payment but i paid on time last week thank you
+__label__Data_Sync_Issue cloud sync button does nothing when i press it no progress indicator
+__label__Bug_Report please help logo image is not rendering in email templates showing as broken image
+__label__Bug_Report found a bug where duplicate entries are created when submitting a form twice thank you
+__label__Bug_Report please help error 422 is returned for valid json payloads in the rest endpoint
+__label__Performance_Issue high latency on all api calls since eight this morning is there an outage i need this resolved as soon as possible
+__label__Payment_Problem transaction was approved by our bank but your system shows it as failed
+__label__Subscription_Cancellation i cancelled the primary account but sub accounts are still being charged thank you
+__label__Bug_Report report generation is stuck at zero percent and never completes this is causing me significant inconvenience
+__label__Security_Concern i noticed an admin user was added to our organisation that i did not authorise this is causing me significant inconvenience
+__label__Subscription_Cancellation we cancelled online but the system shows our subscription as still active
+__label__Feature_Request a zapier integration would help us automate our workflows significantly
+__label__Payment_Problem hello my credit card was charged twice for the same invoice please issue a credit
+__label__Payment_Problem my paypal payment was deducted but the subscription was not activated
+__label__Payment_Problem i was charged a cancellation fee that was not in my agreement i need this resolved as soon as possible
+__label__Subscription_Cancellation i cancelled my trial but was charged the full subscription price thank you
+__label__Login_Issue hello the system says my email is not registered but i have been a user for two years
+__label__Payment_Problem there seems to be a discrepancy in my billing statement for this month thank you
+__label__Login_Issue we cannot sign in the error says our account does not exist
+__label__Payment_Problem hello i need a vat invoice for last month payment for accounting purposes
+__label__Subscription_Cancellation cancellation pending for a week with no status update in the portal and it has been happening for several days
+__label__Feature_Request feature request custom branding with our company logo on the customer portal thank you
+__label__Bug_Report the search filter ignores the date range and returns all records instead
+__label__Refund_Request please help i purchased the wrong plan by mistake can i get a refund and upgrade instead
+__label__Feature_Request please help please add slack integration so we can receive notifications in our workspace
+__label__Account_Suspension i appealed the suspension three days ago and have heard nothing back thank you
+__label__Account_Suspension account suspended for abuse but i have never misused the platform
+__label__Data_Sync_Issue the sync error log shows conflict errors but no resolution option
+__label__Account_Suspension suspension is affecting my ability to meet a client deadline urgent thank you
+__label__Account_Suspension my account has been suspended without any prior warning this is urgent please reinstate it this is urgent
+__label__Bug_Report error 422 is returned for valid json payloads in the rest endpoint this is causing me significant inconvenience
+__label__Security_Concern malware was detected originating from activity on our shared account this is urgent
+__label__Login_Issue cannot log in on ios safari works fine on desktop chrome
+__label__Account_Suspension my account has been suspended without any prior warning please reinstate it this is causing me significant inconvenience
+__label__Payment_Problem billing page shows a different amount than what was quoted in my contract this is causing me significant inconvenience
+__label__Account_Suspension i received a suspension notice for policy violation but i have not done anything wrong and it has been happening for several days
+__label__Account_Suspension my account has been suspended without any prior warning and it has been happening for several days please reinstate it and it has been happening for several days
+__label__Data_Sync_Issue contacts added on mobile are not appearing on desktop after sync
+__label__Payment_Problem my colleague need a vat invoice for last month payment for accounting purposes
+__label__Data_Sync_Issue hello calendar sync with google calendar stopped working after the last update
+__label__Bug_Report there is a visual glitch in the charts after resizing the browser window this is causing me significant inconvenience
+__label__Security_Concern please help i can see other customers files in my account possible data breach
+__label__Refund_Request charged for a seat that was never provisioned this is urgent please refund immediately this is urgent
+__label__Payment_Problem payment failed even though my card is valid and has sufficient funds thank you

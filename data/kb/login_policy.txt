@@ -1,0 +1,245 @@
+LOGIN AND ACCOUNT ACCESS POLICY
+
+---
+FREQUENTLY ASKED QUESTIONS — LOGIN & ACCESS
+---
+
+Q: I can't log in. What do I do?
+A: First try "Forgot Password" on the login screen. If you receive the reset email, follow the link (valid 15 minutes). If no email arrives, check spam/junk and confirm you're using the exact registered email. If still stuck, contact support@company.com.
+
+Q: I forgot my password. How do I reset it?
+A: Click "Forgot Password" on the login page or visit company.com/reset-password. Enter your registered email. A reset link is emailed within 2 minutes. The link expires after 15 minutes — request a new one if it expires.
+
+Q: My account is locked. How do I unlock it?
+A: Accounts lock for 30 minutes after 5 failed attempts. After 30 minutes you can try again automatically. For manual unlock, contact support with your registered email and a government-issued ID.
+
+Q: I'm not receiving the password reset email.
+A: Check spam, junk, and promotions folders. Also verify you're entering the exact email address on the account — including correct domain. Add noreply@company.com to your contacts. If issues persist, contact support to confirm your registered email.
+
+Q: My 2FA code is not working.
+A: Ensure your device's clock is set to automatic/network time (TOTP codes are time-sensitive). Try entering the code immediately after it refreshes. If using SMS 2FA, there may be a carrier delay — wait 2 minutes. If still failing, use a backup code.
+
+Q: I lost access to my authenticator app / 2FA device.
+A: Use one of your backup codes to log in. If you don't have backup codes, contact support@company.com — full identity verification (government-issued ID) is required to bypass 2FA for security.
+
+Q: I don't have my backup codes and can't access my 2FA.
+A: Contact support@company.com with your account email and a government-issued ID photo. Our team cannot bypass 2FA without this identity verification for your protection.
+
+Q: I think someone else has accessed my account.
+A: Immediately change your password and go to Account Settings > Security > Active Sessions and revoke all sessions. Then email security@company.com with details of the suspected breach.
+
+Q: The login page isn't loading or shows an error.
+A: Try a different browser or an incognito/private window. Clear cookies for company.com. Disable browser extensions. Check your network — try a different Wi-Fi or network.
+
+Q: I can log in on one device but not another.
+A: The issue is likely device-specific. On the failing device: clear browser cache and cookies, update your browser or app, and try incognito mode. If using a work device, your company's proxy or firewall may be blocking the login page.
+
+Q: Social login (Google/Apple/Microsoft) isn't working.
+A: In your Google/Apple/Microsoft account settings, revoke permissions for our app and then reconnect. Make sure the social account email matches your registered platform email.
+
+Q: How do I enable Two-Factor Authentication (2FA)?
+A: Go to Account Settings > Security > Two-Factor Authentication. Choose your preferred method (authenticator app recommended), scan the QR code, verify a test code, and save. Store your backup codes securely.
+
+Q: I changed my email address but now can't log in.
+A: If your email change is pending verification, check the new email inbox for a verification link. If the change was completed, use the new email to log in.
+
+Q: I get "Invalid credentials" even though my password is correct.
+A: This can happen if your password was changed on another device. Try resetting your password. Also ensure Caps Lock is off and autofill isn't inserting an outdated password.
+
+---
+SECTION 1: STANDARD LOGIN OVERVIEW
+---
+
+
+Password reset emails are sent within 2 minutes. If not received, check the spam or junk folder.
+Accounts are temporarily locked after 5 consecutive failed login attempts for a period of 30 minutes for security reasons.
+To unlock an account manually, the customer must contact support with their registered email address and a government-issued ID for identity verification.
+Two-Factor Authentication (2FA) is strongly recommended and can be enabled in Account Settings.
+If a customer suspects their account has been compromised, they should immediately change their password and revoke all active sessions from the Security settings page.
+For social login issues (Google, Apple), the problem is often related to permissions. The customer should revoke and re-grant permissions in their social account settings.
+
+---
+SECTION 2: DETAILED LOGIN TROUBLESHOOTING
+---
+
+If the "Forgot Password" email is not received within 5 minutes, check the spam, junk, and promotions folders in the email client.
+Many email providers apply filters that may redirect automated emails; adding noreply@company.com to the contact list helps ensure future delivery.
+If no reset email is found after checking all folders, the customer should verify they are entering the exact email address registered on the account.
+Email addresses are case-insensitive during login but are stored in their original case; typos in the email field are a common cause of reset failures.
+To verify the registered email address without logging in, customers can contact support with their full name, account username, and approximate signup date.
+If the password reset email was deleted before the link was clicked, a new reset must be initiated; old reset links cannot be resent individually.
+Browser autofill can sometimes populate incorrect or outdated credentials; try manually typing the email and password rather than using autofill.
+Cached credentials in the browser's password manager may be out of sync after a password change; update the saved credentials or delete and re-enter them.
+Browser extensions (particularly ad blockers and privacy extensions) can interfere with the login form; try logging in using a private/incognito browser window to rule this out.
+Disabling browser extensions temporarily and attempting login again is recommended as a first troubleshooting step for persistent login page errors.
+Clearing all cookies and site data for company.com in the browser settings resolves most persistent session-related login issues.
+If the login page itself fails to load, check your network connection and DNS settings; try accessing the page via a different network.
+Content Security Policy (CSP) headers on the login page prevent cross-site scripting; do not attempt to inject scripts via the URL or form fields.
+Mobile app login failures may be caused by an outdated app version; update the app from the App Store or Google Play Store and retry.
+On iOS, after an app update, stored Keychain credentials may need to be re-entered; this is a normal iOS security behavior.
+If login works on one device but not another, the issue is likely device-specific (cache, cookies, app version, or network proxy settings) rather than account-level.
+
+---
+SECTION 3: ACCOUNT LOCKOUT POLICY AND MANAGEMENT
+---
+
+Accounts are automatically locked after 5 consecutive failed login attempts within any 10-minute rolling window.
+The lockout duration is 30 minutes, after which the user may attempt to log in again without manual intervention.
+After a lockout expires, the failed attempt counter is reset; subsequent failed attempts will trigger a new lockout cycle.
+The lockout applies to all login methods (password, social login, SSO), not just one method.
+Enterprise administrators can configure the account lockout threshold and duration from the Admin Panel under Security Settings.
+Minimum configurable lockout threshold for enterprise is 3 attempts; maximum is 10 attempts.
+Minimum lockout duration is 5 minutes; enterprise admins can set it up to 8 hours for high-security environments.
+An email notification is sent to the registered email address when an account lockout is triggered, informing the user and providing self-service options.
+If the customer believes the lockout was caused by unauthorized login attempts rather than their own mistake, they should immediately contact security@company.com.
+Manual unlocking by a support agent requires the customer to authenticate their identity via the registered email address.
+In cases where both the account and the registered email are compromised, enhanced identity verification (government-issued ID) is required.
+Enterprise administrators can manually unlock a user's account from the Admin Panel > User Management > [User] > Unlock Account.
+A forced password reset can be combined with manual unlock by the administrator to require the user to set a new password on next login.
+All lockout events, including timestamp, IP address, and device information, are recorded in the security audit log.
+Repeated lockout patterns targeting specific accounts are flagged by our security system as potential brute force attacks and trigger enhanced monitoring.
+If a brute force attack against an account is confirmed, the originating IP addresses are blocked and the account is placed under security watch.
+
+---
+SECTION 4: PASSWORD RESET DETAILED PROCEDURES
+---
+
+The password reset process begins by clicking "Forgot Password" on the login screen or navigating to company.com/reset-password.
+The customer enters their registered email address. If the email exists in the system, a reset link is sent; if not, no notification is sent to prevent email enumeration.
+The reset email contains a unique single-use link that is cryptographically signed and bound to the requesting user's IP range.
+The reset link expires after 15 minutes from the time the email was sent.
+If the reset link has expired, the customer must initiate a new password reset request; there is no mechanism to extend existing links.
+The new password must meet current password strength requirements: minimum 12 characters, mixed case, numbers, and symbols.
+The new password cannot be the same as the current password or any of the last 10 passwords used on the account.
+After a successful password reset, all existing sessions across all devices are immediately invalidated for security.
+A confirmation email is sent to the registered email address immediately after a password reset is completed successfully.
+If the customer receives a password reset confirmation email but did not initiate the reset, they should immediately contact security@company.com.
+Clicking the "Click here if you did not request this reset" link in the confirmation email will lock the account until further verification.
+Support agents can trigger a forced password reset for an account but cannot set the new password directly; the reset is always completed by the account holder via email.
+Password reset attempts are rate-limited per email address; more than 5 reset requests within 1 hour will be throttled and some requests may be delayed.
+SMS-based password reset is available as a secondary option when a verified phone number is on the account; a 6-digit OTP is sent.
+SMS OTPs for password reset expire after 10 minutes and can only be used once.
+If both email and phone are inaccessible, the full account recovery process with identity verification must be followed.
+
+---
+SECTION 5: TWO-FACTOR AUTHENTICATION SETUP AND USAGE
+---
+
+Two-Factor Authentication strengthens account login security by requiring a second proof of identity in addition to the password.
+The 2FA verification step occurs after a successful password entry; the system prompts for the second factor before completing login.
+TOTP-based 2FA (authenticator apps) requires a 6-digit time-based code that changes every 30 seconds.
+The TOTP algorithm uses HMAC-SHA1 with a 30-second time step as specified by RFC 6238.
+Clock drift on the authenticator device can cause code failures; ensure the device's time is set to automatic/network time synchronization.
+If TOTP codes are consistently rejected, try the code immediately when it refreshes to confirm it is not a timing issue.
+SMS 2FA sends a numeric code via text message; the code is 6 digits and expires after 10 minutes.
+Delivery of SMS codes depends on the recipient's mobile carrier and may be delayed during periods of high network traffic.
+Backup codes are 10-character alphanumeric strings that should be treated as equivalent in security to a password.
+Each backup code can only be used once; once used, it is crossed off the list.
+If fewer than 3 backup codes remain, the system will prompt the user to generate a fresh set of 10.
+Generating new backup codes invalidates all previous backup codes immediately.
+In situations where neither the primary 2FA method nor backup codes are available, the 2FA recovery process through identity verification is the only option.
+Our support team cannot bypass 2FA without completing the full identity verification process, even at an administrator's request. This protects customers against social engineering attacks.
+Enterprise SSO with MFA configured at the identity provider level satisfies the 2FA requirement; additional platform-level 2FA is not required when SSO MFA is active.
+After 2FA recovery, the customer is required to enroll a new 2FA method within 7 days; accounts without a new 2FA method are flagged.
+
+---
+SECTION 6: SOCIAL LOGIN (GOOGLE, APPLE, MICROSOFT) DETAILS
+---
+
+Social login allows customers to authenticate using their existing Google, Apple, or Microsoft account credentials instead of a separate platform password.
+When using social login for the first time, a new platform account is created and linked to the social identity provider (IdP).
+If a customer already has an account using the same email address, the social login is linked to the existing account after an email verification step.
+A platform account can have multiple social login providers linked simultaneously (e.g., both Google and Apple).
+Unlinking a social login provider that is the only authentication method on an account requires setting a platform password first.
+Social login relies on OAuth 2.0 authorization flows; the platform receives a verified token from the social IdP and never sees or stores the social account's password.
+Permission scopes requested from Google login are: email address, name, and profile picture only. No access to Gmail, Drive, or other Google services is requested.
+Permission scopes requested from Apple login are: name and email address. Apple's "Hide My Email" relay feature is fully supported.
+Permission scopes requested from Microsoft login are: email and basic profile. No access to Microsoft 365 services is requested.
+If social login fails with a "Permission Denied" error, the customer should go to their social account's connected apps settings and remove the platform, then attempt social login again to trigger a fresh authorization.
+For Google: Manage connected apps at myaccount.google.com/permissions.
+For Apple: Manage connected apps at appleid.apple.com > Sign In with Apple.
+For Microsoft: Manage connected apps at myaccount.microsoft.com > Privacy > App permissions.
+Social login is not affected by platform-level password lockouts; however, if the social IdP locks the social account, social login to the platform will also fail.
+Enterprise organizations using SSO cannot use social login; all authentication is routed through the configured SSO identity provider.
+Social login accounts are subject to all the same security policies and session management rules as password-based accounts.
+
+---
+SECTION 7: SINGLE SIGN-ON (SSO) FOR ENTERPRISE
+---
+
+Enterprise SSO allows organizations to authenticate platform users through their corporate identity provider (IdP) without separate platform credentials.
+SSO is configured per organization domain; all users with verified email addresses matching the organization's claimed domain are redirected through SSO.
+Supported SSO protocols are SAML 2.0 and OIDC (OpenID Connect).
+SAML 2.0 integration requires configuration of the SP Entity ID, ACS URL (Assertion Consumer Service), and the IdP metadata XML.
+The SP Entity ID for our platform is: https://app.company.com/auth/saml/metadata.
+The ACS URL to configure in your IdP is: https://app.company.com/auth/saml/callback.
+OIDC integration requires a client ID, client secret, discovery URL, and confirmation of supported scopes.
+Our support team provides a detailed SSO setup guide and sandbox testing environment for initial configuration.
+Once SSO is enabled and tested, enabling "Enforce SSO" in the Admin Panel redirects all login attempts through the IdP, disabling direct password login.
+Just-in-Time (JIT) provisioning automatically creates platform accounts for users authenticated through SSO who do not yet have an existing platform account.
+JIT provisioning assigns new users to a default role defined by the enterprise administrator in the SSO configuration.
+Attributes mapped from the IdP can include name, email, department, job title, and custom group memberships.
+Group-to-role mapping allows IdP group memberships to automatically assign platform roles (e.g., members of the "Platform Admins" group in the IdP receive the Administrator role on the platform).
+SSO session duration is governed by the IdP's token lifetime settings; the platform respects the not-after assertions in SAML tokens.
+When a user's IdP session expires, they are redirected to the IdP for re-authentication; they are not required to re-enter platform-specific credentials.
+SSO configuration errors (incorrect ACS URL, certificate mismatch) will result in a 400 error; contact enterprise_support@company.com with the SAML response XML for debugging.
+
+---
+SECTION 8: API ACCESS AND AUTHENTICATION
+---
+
+API access uses long-lived API tokens that are generated and managed from the Developer Settings section of the account.
+API tokens are displayed only once at creation time; if a token is lost, it must be revoked and a new one generated.
+API tokens should be stored securely (environment variables, secrets managers) and never committed to version control or embedded in client-side code.
+Token scopes define the permissions granted to the API token; available scopes include Read, Write, Admin, and custom resource-level scopes.
+Tokens with broad scopes should only be used for trusted server-side integrations; client-facing apps should use OAuth with user-consented scopes.
+OAuth 2.0 authorization code flow with PKCE is the recommended authentication method for third-party apps integrating on behalf of users.
+The OAuth authorization endpoint is: https://api.company.com/oauth/authorize.
+The OAuth token endpoint is: https://api.company.com/oauth/token.
+Access tokens issued via OAuth expire after 1 hour; refresh tokens are valid for 30 days and can be used to obtain new access tokens.
+Each API request must include the Authorization header with the bearer token: Authorization: Bearer {token}.
+API requests without valid authentication return a 401 Unauthorized response.
+Requests with valid authentication but insufficient scope return a 403 Forbidden response.
+API rate limits are enforced per token; the default limit is 1,000 requests per minute.
+Enterprise accounts can request elevated API rate limits through the account manager or by contacting enterprise_support@company.com.
+Rate limit status is communicated via X-RateLimit-Limit, X-RateLimit-Remaining, and X-RateLimit-Reset response headers.
+Requests that exceed the rate limit receive a 429 Too Many Requests response with a Retry-After header indicating when to retry.
+Webhook event subscriptions can be configured in the Developer Settings to push real-time events to external endpoints without polling the API.
+
+---
+SECTION 9: USER ROLES AND PERMISSIONS
+---
+
+Platform accounts can have one of the following roles: Owner, Administrator, Manager, Member, Read-Only, and Guest.
+The Owner role is assigned to the account creator and has unrestricted access to all features and settings.
+Only one Owner can exist per organization; ownership transfer is possible but requires confirmation from the current owner.
+Administrators have access to all features except billing plan changes and ownership transfer; they can manage all users and settings.
+Managers have access to team-level settings and can add or remove Members from their assigned teams but cannot perform organization-level administration.
+Members have access to product features based on their plan tier but cannot manage other users or access administrative settings.
+Read-Only users can view all content they have access to but cannot create, edit, or delete any content or settings.
+Guests are external users invited to collaborate on specific projects; their access is limited to the projects they are explicitly invited to.
+Role assignments are made by Administrators or Owners from the User Management section of the Admin Panel.
+Bulk role assignment is available via CSV import in the Admin Panel for organizations managing large user lists.
+Custom roles with specific permission combinations can be created on Enterprise plans to satisfy unique organizational access control requirements.
+Role changes take effect immediately and existing active sessions reflect the new role without requiring re-login.
+All role assignment and change events are logged in the audit trail with the administrator who made the change, the affected user, and the timestamp.
+User access can be temporarily suspended without removing the user from the organization; suspended users cannot log in but their data and assignments are preserved.
+Offboarding best practice: when a user leaves the organization, suspend the account, transfer ownership of their content, export relevant data, then delete the account.
+Deleted user accounts are removed from all team assignments; content they created is reassigned to the organization owner and not deleted automatically.
+
+---
+SECTION 10: SESSION SECURITY AND TRUSTED NETWORK POLICIES
+---
+
+Users can configure IP-based access restrictions from Account Settings > Security > Network Restrictions.
+IP allowlisting at the account level blocks all login attempts from IP addresses not on the allowlist.
+CIDR notation is supported for allowlisting IP ranges (e.g., 192.168.1.0/24 allows all IPs in the 192.168.1.x subnet).
+Users can add up to 50 IP addresses or CIDR ranges to their personal IP allowlist.
+If a user accidentally locks themselves out by adding an IP restriction while not on the allowed network, support can assist with verification to remove the restriction.
+VPN usage is supported; the platform does not block known VPN provider IP ranges by default, though enterprise admins can configure this.
+Session cookies are set with Secure, HttpOnly, and SameSite=Strict attributes to prevent interception and cross-site attacks.
+The platform enforces HSTS (HTTP Strict Transport Security) with a max-age of 1 year and includeSubDomains to ensure encrypted connections.
+All authentication endpoints require HTTPS; attempts to access them over HTTP are automatically redirected.
+Certificate pinning is implemented in the native mobile apps to prevent man-in-the-middle attacks in high-risk network environments.
+Users in regulated industries (finance, healthcare) can enable "Compliance Mode" in the mobile app, which disables screenshot capture and restricts app access on jailbroken or rooted devices.
+Active sessions display the approximate location, device type, and last activity time in Account Settings > Security > Active Sessions.

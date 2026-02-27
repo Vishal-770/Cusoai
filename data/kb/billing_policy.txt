@@ -1,0 +1,229 @@
+BILLING AND PAYMENT POLICY
+
+---
+FREQUENTLY ASKED QUESTIONS — BILLING
+---
+
+Q: How do I cancel my subscription?
+A: Go to Account Settings > Billing > Subscription and click "Cancel Subscription". Cancellation takes effect at the end of the current billing period. Your data is preserved for 30 days after cancellation.
+
+Q: How do I update or change my credit card?
+A: Go to Account Settings > Billing > Payment Methods and click "Add Payment Method". Set it as primary, then you can remove the old card.
+
+Q: Why was I charged more than I expected?
+A: Common reasons: a plan upgrade was pro-rated and charged immediately, an annual renewal occurred, or an add-on was activated. Check Billing > Invoice History for a detailed breakdown of charges.
+
+Q: I never received my invoice. How do I get it?
+A: Invoices are in Billing > Invoice History and can be downloaded as PDF. Check your billing email address in Billing Settings — it may differ from your login email. Also check your spam folder for emails from billing@company.com.
+
+Q: My payment failed. What happens to my account?
+A: We retry automatically 3 times over 7 days (day 1, day 3, day 7). After all retries fail, your account enters a 3-day grace period, then suspends if unpaid. Updating your payment method and retrying will immediately restore access.
+
+Q: My account was suspended for non-payment. How do I reactivate it?
+A: Update your payment method in Billing Settings and make a payment. Your account reactivates within 2 hours of successful payment. No data is lost during suspension.
+
+Q: Can I get an invoice with my company name and VAT number?
+A: Yes. Add your company name, billing address, and VAT/tax ID in Billing > Billing Settings. All future invoices will include this information. You can also edit existing invoices for enterprise accounts.
+
+Q: How does pro-rated billing work when I upgrade?
+A: You are charged immediately for the difference in plan price multiplied by the remaining days in your current billing cycle. Formula: (New plan daily rate − old plan daily rate) × remaining days = charge.
+
+Q: When does my subscription renew?
+A: Monthly plans renew on the same day each month as your signup date. Annual plans renew on the anniversary of signup. You receive an invoice notification 3 days before renewal.
+
+Q: How do I switch from monthly to annual billing?
+A: Go to Account Settings > Billing > Subscription > Change Plan and select the annual option. You'll be charged the annual price immediately and your billing cycle resets to that date.
+
+Q: Can I pause my subscription instead of cancelling?
+A: We do not currently offer a pause feature. You can cancel and reactivate within 30 days without losing data.
+
+Q: I see an unauthorized charge on my statement. What do I do?
+A: Report unauthorized charges to billing@company.com within 60 days. Include the charge amount, date, and your account email. We will investigate and issue a refund if the charge was not authorised.
+
+Q: Do you charge VAT or sales tax?
+A: Tax is applied based on your billing address and applicable local regulations. VAT/tax amounts are shown on each invoice.
+
+Q: What payment methods do you accept?
+A: Visa, Mastercard, American Express, Discover, Diners Club, PayPal, Apple Pay, Google Pay. ACH (US), SEPA (EU), and BACS (UK) bank transfers are available for enterprise annual plans.
+
+Q: Can I get Net 30 payment terms?
+A: Net 30 is available for enterprise customers with approved credit. Contact sales@company.com to request a credit review.
+
+Q: How do I get a receipt for my purchase?
+A: Every invoice in Billing > Invoice History can be downloaded as a PDF receipt. A receipt is also emailed to your billing address automatically after each successful payment.
+
+---
+SECTION 1: STANDARD BILLING OVERVIEW
+---
+
+
+Invoices are generated automatically at the start of each billing cycle and sent to the registered email.
+If a payment fails, we retry it automatically 3 times over the next 3 days before suspending the account.
+Customers can update their payment method at any time from the Billing section of their Account settings.
+All transactions are encrypted using industry-standard TLS/SSL protocols.
+Disputes and unauthorized charges should be reported to our billing department within 60 days.
+Subscription plan upgrades are billed immediately and pro-rated for the remaining days in the billing cycle.
+Downgrades take effect at the end of the current billing cycle and are not pro-rated.
+
+---
+SECTION 2: DETAILED PAYMENT METHODS AND PROCESSING
+---
+
+We accept Visa, Mastercard, American Express, Discover, and Diners Club credit and debit cards.
+PayPal is supported as both a one-time payment method and as a recurring billing source for subscription accounts.
+Bank transfers (ACH in the US, SEPA in Europe, BACS in the UK) are accepted for annual enterprise plans with a minimum contract value of $1,000.
+Wire transfers are accepted for enterprise contracts above $10,000 annually; a $25 wire processing fee applies per transfer.
+Cryptocurrency payments are not currently accepted on any plan tier.
+Apple Pay and Google Pay are supported for checkout on mobile browsers and within the native mobile applications.
+SEPA Direct Debit mandates are created digitally and comply with SEPA Core Direct Debit Scheme requirements.
+ACH pull payments are processed through Nacha-compliant banking rails with standard 3-5 business day settlement times.
+When adding a new payment method, a temporary $1.00 authorization hold is placed to verify the card; this hold is released within 3-5 business days.
+Card verification uses 3D Secure (3DS2) authentication for transactions flagged as potentially high risk, adding an additional authentication step.
+We do not store raw card numbers; all card data is tokenized by our PCI-DSS Level 1 certified payment processor.
+Our payment infrastructure is certified PCI-DSS Level 1, the highest level of payment security certification available.
+Customers can store multiple payment methods on their account and designate one as the primary billing method.
+The primary payment method is charged for all subscription renewals and automatic payments.
+Secondary payment methods serve as fallback if the primary payment method fails.
+To remove a payment method that is currently set as primary, the customer must first designate another method as primary.
+A payment method cannot be deleted if there are any pending or outstanding invoice payments that have not yet been cleared.
+
+---
+SECTION 3: INVOICE AND BILLING CYCLE MANAGEMENT
+---
+
+Billing cycles are either monthly or annual depending on the subscription plan selected at signup.
+Monthly billing cycles renew on the same day each month as the original signup date.
+If the renewal date falls on a day that does not exist in a given month (e.g., the 31st in February), billing occurs on the last day of that month.
+Annual billing cycles renew on the anniversary of the original signup date each year.
+Invoices are generated 3 days before the billing cycle renews to give customers advance notice.
+Invoice notifications are sent to the primary billing email address, which can differ from the account login email and is configured in Billing Settings.
+Multiple billing email recipients can be configured for enterprise accounts to ensure finance teams receive invoices directly.
+Invoices are available for download in PDF format from the Billing > Invoice History section of the account dashboard.
+Invoice PDFs include a full breakdown of charges, applied discounts, applicable taxes, and payment method used.
+Invoices are retained in the system for 7 years for accounting and legal compliance purposes.
+Custom purchase order (PO) numbers can be added to invoices for enterprise customers; the PO number will appear on all invoices for the billing period specified.
+Custom billing addresses, including company name, VAT/tax identification numbers, and postal address, can be set in Billing Settings for accurate invoice formatting.
+Net 30 payment terms are available for enterprise customers with approved credit; post-payment invoicing is subject to credit review and approval.
+Late payment on Net 30 invoices will incur a late fee of 1.5% of the outstanding balance per month after the due date.
+Consolidated billing allows enterprise parent accounts to aggregate charges across multiple sub-accounts into a single monthly invoice.
+Billing timezone is UTC by default; enterprise customers can configure their preferred billing timezone in account settings.
+
+---
+SECTION 4: PAYMENT FAILURE AND DUNNING PROCESS
+---
+
+When a payment fails, our dunning management system initiates an automated retry and notification sequence.
+The first retry attempt occurs 1 day after the initial payment failure.
+The second retry attempt occurs 3 days after the initial payment failure.
+The third and final retry attempt occurs 7 days after the initial payment failure.
+Between retry attempts, the customer receives email notifications at each failed attempt with instructions to update their payment method.
+If all three retry attempts fail, the subscription enters a 3-day grace period during which the account remains active but is flagged.
+During the grace period, the customer can update their payment method and trigger a manual payment attempt to restore normal billing.
+If the subscription is not resolved by the end of the grace period, the account is suspended for non-payment.
+Suspended accounts are fully reactivated within 2 hours of successful payment processing.
+No subscription data or settings are lost during a non-payment suspension period.
+If an account remains unpaid for 30 days post-suspension, it is scheduled for deactivation and the customer is notified 7 days in advance.
+After deactivation for non-payment, data is retained for 14 days during which reactivation with full payment of outstanding balance is possible.
+After the 14-day post-deactivation retention window, data is permanently deleted and cannot be recovered.
+Enterprise customers with Net 30 terms do not enter automated dunning; instead, account managers follow up directly on overdue invoices.
+Customers can opt in to receiving payment failure SMS alerts in addition to the standard email notifications through Billing Settings.
+The reason for payment failure (insufficient funds, card expired, do not honor, etc.) is communicated via email where available from the payment processor.
+Updating an expired card number and expiration date on the same primary card requires re-entering the card details, not just the new expiration date.
+
+---
+SECTION 5: SUBSCRIPTION PLANS AND UPGRADES
+---
+
+We offer Individual, Team, Business, and Enterprise subscription tiers with increasing feature access and user limits.
+The Individual plan supports 1 user seat and is billed monthly or annually.
+The Team plan supports between 2 and 25 user seats and includes collaborative features.
+The Business plan supports between 26 and 250 user seats and includes advanced administrative controls.
+The Enterprise plan is for organizations above 250 seats and includes custom SLAs, dedicated support, SSO, and custom contracts.
+Plan pricing is published on the company.com/pricing page and is subject to change with 30 days' advance notice to active subscribers.
+Existing subscribers are grandfathered at their current plan pricing until they choose to change plans or the end of their current annual term.
+Upgrading from a lower tier plan to a higher tier plan takes effect immediately.
+When upgrading mid-cycle, the charge for the upgraded plan is pro-rated based on the number of days remaining in the current billing cycle.
+Proration calculation: (Daily rate of new plan × remaining days) minus (Daily rate of old plan × remaining days) = amount charged immediately.
+If a credit results from a downgrade proration calculation (where allowed), it is applied to the account as a billing credit toward future charges.
+Downgrading from a higher tier to a lower tier takes effect at the end of the current billing cycle, not immediately.
+If the current user seat count exceeds the limit of the downgraded plan, the downgrade cannot be completed until the user count is reduced.
+Annual plan discounts are published on the pricing page; annual subscribers typically receive 2 months of subscription free compared to monthly billing.
+Volume discounts for large user seat counts on the Business and Enterprise tiers are negotiated individually with our sales team.
+Add-on features (advanced analytics, additional storage, priority support) can be added to any plan at any time and are billed monthly.
+Add-ons billed monthly are not discounted when included with annual plans unless specifically negotiated.
+Trial plans offer 14 days of full Business plan functionality with no payment information required.
+After a free trial expires, the account downgrades to a read-only Free tier; data is preserved for 30 days for conversion to a paid plan.
+
+---
+SECTION 6: TAXATION AND COMPLIANCE
+---
+
+We are required by law to collect sales tax, VAT, or GST in jurisdictions where we have a tax nexus or are otherwise required to collect tax.
+US customers may be charged state and/or local sales tax depending on the tax laws in their state of residence.
+EU customers are charged VAT at the applicable rate for their country of residence in accordance with EU VAT rules.
+UK customers are charged 20% VAT in accordance with HMRC requirements.
+Australian customers are charged 10% GST in accordance with the Australian Tax Office requirements.
+Canadian customers may be charged GST, HST, or PST depending on their province.
+Business customers in VAT-obligated jurisdictions can provide their VAT ID in Billing Settings to apply VAT reverse charge mechanisms where applicable.
+A valid VAT ID will be validated against government databases and, if confirmed, zero-rated VAT will be applied on future invoices.
+Tax-exempt organizations (501(c)(3) in the US, or equivalent abroad) must submit a valid exemption certificate to billing@company.com to have taxes removed from their account.
+Tax exemption review is completed within 5 business days and, once approved, applies retroactively to invoices within the current calendar month.
+Taxes are calculated at the point of invoice generation and are based on the billing address on file; it is the customer's responsibility to keep the billing address accurate.
+We do not provide tax advice; customers should consult a qualified tax professional for guidance on deductibility or VAT reclaim.
+
+---
+SECTION 7: BILLING DISPUTES AND CHARGE CORRECTIONS
+---
+
+A billing dispute should be filed within 60 days of the charge appearing on the invoice.
+To file a billing dispute, contact billing@company.com with the invoice number, amount disputed, and a description of why the charge is incorrect.
+Billing disputes are acknowledged within 2 business days.
+While a billing dispute is under review, the disputed amount will not be sent to collections.
+If a dispute is resolved in the customer's favor, a credit note is issued and applied against the next invoice or refunded to the original payment method.
+If a dispute is resolved against the customer, a detailed explanation is provided along with supporting evidence of the charge legitimacy.
+Customers who initiate a credit card chargeback without first filing a billing dispute may have their account suspended pending resolution.
+We encourage all billing concerns to be resolved directly before escalating to a chargeback, as chargebacks carry administrative costs for both parties.
+A formal dispute resolution process, including escalation to senior billing management, is available if initial dispute resolution is not satisfactory.
+All billing dispute communications are tracked in our CRM and are available to the customer upon request.
+
+---
+SECTION 8: BILLING CREDITS AND PROMOTIONS
+---
+
+Billing credits are applied automatically to the next invoice and reduce the amount due.
+Billing credits do not expire and roll over to subsequent invoices until fully consumed.
+Credits cannot be converted to cash refunds unless the account is being closed and the credit is the result of a billing error or overpayment.
+Referral credits are issued within 7 days of the referred customer completing their first payment.
+Promotional codes can be applied at checkout or in Billing Settings; they are single-use and cannot be combined with other promotion codes unless explicitly stated.
+Promotional discounts are applied at the plan level and are reflected on all invoices during the promotion period.
+Promotional pricing periods renew at standard pricing unless a recurring discount arrangement was explicitly agreed in writing.
+Billing credits issued as SLA compensation for service downtime are calculated based on the affected plan's monthly or daily rate and the duration of the outage.
+Enterprise SLA credit entitlements are defined in the individual customer's Master Service Agreement and may differ from standard credits described here.
+
+---
+SECTION 9: ANNUAL BILLING AND MULTI-YEAR CONTRACTS
+---
+
+Annual billing requires payment of the full year's subscription cost upfront.
+Annual plans are not refundable after the first 30 days except where mandated by applicable consumer protection laws.
+Within the first 30 days of an annual subscription, customers may request cancellation and receive a pro-rated refund for the unused months.
+Multi-year contract pricing is available for Enterprise customers and involves custom negotiation with the sales team.
+Multi-year contracts are locked at the agreed pricing for the contract duration regardless of standard pricing changes.
+Early termination of a multi-year contract is subject to an early termination fee defined in the contract, typically 25% of the remaining contract value.
+Custom payment schedules (quarterly, bi-annually) for multi-year enterprise contracts can be arranged with the finance team.
+Annual plan renewals generate a renewal reminder email 60 days before the renewal date to allow customers time to review and adjust their subscription.
+A second renewal reminder is sent 14 days before the renewal date.
+Manual annual renewals that require a new purchase order must be submitted at least 5 business days before the renewal date to avoid service interruption.
+
+---
+SECTION 10: INTERNATIONAL BILLING AND CURRENCY
+---
+
+Billing is conducted in USD (US Dollars) by default for all global customers.
+Enterprise customers may request billing in EUR, GBP, AUD, or CAD; currency lock-in must be confirmed in writing before the contract start.
+Exchange rate conversion for non-USD billing is fixed at contract signing and does not fluctuate with market exchange rates during the contract period.
+International wire transfer customers are responsible for any intermediary bank fees; our stated price is the net amount we must receive.
+Billing addresses and payment methods can be based in any country; we do not restrict payment processing based on country of origin except where prohibited by international sanctions.
+We comply with OFAC sanctions lists and do not process payments from individuals or entities on restricted lists.
+Currency conversion on the customer's credit card statement is handled by the issuing bank; our charge is always in the agreed billing currency.
+Multi-currency invoice display is available for enterprise accounts, showing both the billing currency and a converted local currency estimate for informational purposes.

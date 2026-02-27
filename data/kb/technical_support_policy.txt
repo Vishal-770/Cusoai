@@ -1,0 +1,271 @@
+TECHNICAL SUPPORT AND BUG REPORTING POLICY
+
+---
+FREQUENTLY ASKED QUESTIONS — TECHNICAL SUPPORT
+---
+
+Q: The app is not loading or shows a blank page.
+A: Try: (1) clear browser cache and cookies, (2) hard reload (Ctrl+Shift+R / Cmd+Shift+R), (3) try incognito mode, (4) try a different browser. Check status.company.com for any active incidents. If the issue persists, report it to support@company.com with your browser version and OS.
+
+Q: The app is very slow. How do I fix it?
+A: Check status.company.com for incidents. Clear browser cache. Disable extensions (especially ad blockers). Test on a different network or disable VPN. Close unused browser tabs to free up memory. For data-heavy views, narrow your date range or apply filters.
+
+Q: My data isn't syncing / showing outdated information.
+A: Trigger a manual sync (Settings > Storage > Sync) or do a hard reload (Ctrl+F5). Check your internet connection. If the issue persists, clear the local app cache from Settings > Storage. Still failing? Report to support with your account ID and the specific data that isn't syncing.
+
+Q: I'm getting an error message. What should I report?
+A: Provide: the exact error message text, the URL where it occurred, your browser version and OS, and exact steps to reproduce. Screenshots or a screen recording are very helpful.
+
+Q: How do I report a bug?
+A: Submit a ticket via the in-app chat widget (recommended — auto-attaches account metadata) or email support@company.com. Include: the URL, steps to reproduce, expected vs actual behaviour, browser version, OS version, and a screenshot/recording.
+
+Q: How quickly will you fix the bug I reported?
+A: P0 (critical — affects all users, data loss, security): resolved within 4 hours. P1 (high — blocks core workflow): 24 hours. P2 (medium — workaround available): within 3 business days. P3 (cosmetic, minor): next maintenance release. You'll be notified by email at each stage.
+
+Q: The mobile app keeps crashing.
+A: Update the app to the latest version from App Store / Google Play. Restart the app fully. Check your OS is updated. If on iOS, stored Keychain credentials may need re-entry after an update — this is normal iOS behaviour.
+
+Q: I can't access a specific feature. Everything else works fine.
+A: First check your subscription plan — the feature may require a higher tier. Check status.company.com for feature-specific incidents. Clear cache and retry. If it still fails, submit a ticket with the specific feature name and your plan tier.
+
+Q: My browser extension / integration stopped working.
+A: Check if a recent platform update changed the API. Visit company.com/changelog for recent changes. Ensure your integration's API token hasn't expired (tokens must be rotated every 90 days). Contact support with the integration name and any error from the browser console.
+
+Q: I lost data — records are missing.
+A: Contact support immediately at support@company.com and mark the ticket Urgent. Include: what data is missing, when you last saw it, and any actions taken before it disappeared. Do not make further changes to the affected area until support responds.
+
+Q: The platform is completely down. How do I get updates?
+A: Check status.company.com for live incident updates. Subscribe to status notifications on that page. Critical incidents (P0) are also posted to our @CompanyStatus social media.
+
+Q: I need help right now with an urgent production issue.
+A: Priority and Enterprise customers: mark your ticket as "Urgent" in the submission form for immediate on-call alert. Enterprise customers can call our 24/7 support line. Standard customers: email support@company.com — P0 issues are triaged around the clock.
+
+Q: How do I clear my browser cache?
+A: Chrome: Settings > More Tools > Clear Browsing Data > select Cached Images/Files and Cookies > Clear Data. Then Ctrl+Shift+R (hard reload). Firefox: Settings > Privacy > Clear Data. Safari: Safari menu > Clear History.
+
+Q: The login page works but after logging in I get redirected to an error.
+A: Clear all cookies for company.com (not just cache). Try incognito mode. If using SSO, your company's identity provider may have a session issue — contact your IT admin. Otherwise report to support with the exact error URL and message.
+
+Q: What information do you need to help me troubleshoot?
+A: Browser name and version, OS name and version, exact steps to reproduce the issue, the URL where the problem occurs, any error messages (exact text), your account email or ID, and whether the issue occurs in incognito mode.
+
+---
+SECTION 1: TECHNICAL SUPPORT OVERVIEW
+---
+
+
+If the app is slow or unresponsive, customers can check our official Status Page at status.company.com for any ongoing incidents.
+Bugs should be reported with detailed steps to reproduce, the browser/OS version, and a screenshot if possible.
+Our engineering team reviews reported bugs within 24 hours and provides an initial response.
+Critical production bugs that affect all users are treated as P0 and resolved within 4 hours.
+Data sync issues are most commonly caused by poor internet connectivity. The customer should ensure they have a stable connection and try syncing again.
+If data sync fails repeatedly, clearing the local app cache from Settings > Storage resolves the issue in most cases.
+Feature requests are logged and reviewed by the product team in the next quarterly planning cycle.
+
+---
+SECTION 2: SUPPORT TIERS AND SERVICE LEVEL AGREEMENTS
+---
+
+We offer four support tiers: Community, Standard, Priority, and Enterprise, each with different response time commitments and access levels.
+Community Support is included in the Free and Individual plans and provides access to our public documentation, community forum, and email ticketing with a best-effort response window of 3-5 business days.
+Standard Support is included in the Team plan and provides email and in-app chat support with a first response SLA of 8 business hours.
+Priority Support is available as an add-on for Business plan customers and provides email, chat, and scheduled video call support with a first response SLA of 2 hours during business hours (Mon-Fri 9am-6pm in the customer's time zone).
+Enterprise Support is included in the Enterprise plan and provides 24/7 email and phone support, a dedicated Customer Success Manager (CSM), and a guaranteed first response SLA of 1 hour for critical issues.
+Business hours for Standard and Priority support are Monday through Friday, 9:00 AM to 6:00 PM in the customer's local timezone as registered in their account settings.
+Support requests submitted outside business hours are acknowledged automatically and queued for the next business day unless the account is on Enterprise support.
+SLA timers begin when the support ticket is submitted and confirmed received; auto-replies do not reset the SLA clock.
+SLA response time is defined as the time to the first substantive human response, not the time to resolution.
+Resolution time targets vary by issue severity:
+- Critical (P0): resolution or workaround within 4 hours (Enterprise) or 8 hours (Priority).
+- High (P1): resolution or workaround within 24 hours (Enterprise and Priority).
+- Medium (P2): resolution within 3 business days across all paid tiers.
+- Low (P3): resolution within 7 business days across all paid tiers.
+SLA breach notifications are automatically triggered internally, alerting escalation managers when a ticket is approaching or has exceeded its response target.
+Customers can check the real-time status of their support tickets from the Support section of their account dashboard.
+
+---
+SECTION 3: HOW TO SUBMIT A SUPPORT TICKET
+---
+
+Support tickets can be submitted via the in-app chat widget, the help center at help.company.com, or by emailing support@company.com.
+The recommended method for technical issues is the in-app chat widget, as it automatically attaches account metadata (browser version, OS, account ID, recent error logs) to the ticket.
+When submitting via email, include your account email address, a clear description of the issue, exact steps to reproduce, and any relevant screenshots or error messages.
+For API-related issues, include the full API request (endpoint, headers sanitized of sensitive tokens, request body) and the API response received.
+Screen recordings are more helpful than screenshots for issues involving animated behaviors, multi-step workflows, or intermittent errors.
+Do not include plaintext passwords, API tokens, or credit card numbers in support tickets; support agents do not require these and their inclusion is a security risk.
+If an issue requires sharing logs containing sensitive data, support agents can provide a secure encrypted file upload link.
+Support tickets are assigned a unique reference number visible in the confirmation email and in the account's Support History dashboard.
+Replies to the confirmation email automatically update the existing ticket; do not open a new ticket if you have additional information to add.
+Tickets with no customer response for 7 days are automatically closed with a "Pending Customer Response" status; they can be reopened by responding.
+Closed tickets are retained in Support History and can be viewed but not updated; a new ticket must be opened for unresolved issues.
+Priority and Enterprise customers can mark tickets as "Urgent" in the submission form, which triggers an immediate alert to on-call support staff.
+Marking non-critical issues as "Urgent" inappropriately may result in changes to ticket prioritization for future submissions.
+
+---
+SECTION 4: PERFORMANCE TROUBLESHOOTING GUIDE
+---
+
+Performance issues on the platform typically fall into three categories: page load slowness, feature-specific lag, and full app unresponsiveness.
+The first step for any performance issue is visiting status.company.com to check if there is an active incident or degraded performance notice.
+If no active incident is posted, the next step is testing the issue in a different browser (Chrome, Firefox, Edge, Safari) to isolate browser-specific causes.
+Clearing the browser cache and cookies removes stale cached assets that may cause rendering issues or outdated JavaScript execution.
+Browser cache clearing instructions for Chrome: Settings > More Tools > Clear Browsing Data > select Cached Images and Files and Cookies > Clear Data.
+After clearing cache, perform a hard reload using Ctrl+Shift+R (Windows/Linux) or Cmd+Shift+R (Mac) to ensure fresh assets are loaded.
+Browser extensions can significantly degrade application performance, particularly extensions that intercept network requests or modify DOM elements.
+Disable all browser extensions and test performance; re-enable them one by one to identify the offending extension.
+Ad blockers and content blockers may break specific platform features that rely on external CDN-hosted assets; whitelist company.com in your ad blocker.
+Network latency is a common contributor to performance issues; test your connection speed at speedtest.net and confirm latency to our servers is under 100ms.
+If latency is high, try connecting via a different network (e.g., switching from Wi-Fi to a wired connection or turning off VPN).
+VPN routing can add 50-200ms of additional latency depending on the server location; test with VPN disabled if possible.
+JavaScript-heavy pages may perform slowly on older hardware; close unused browser tabs to free up RAM and CPU resources.
+Hardware acceleration in browsers can improve rendering performance for complex interfaces; enable it in browser advanced settings.
+For data-heavy features (large tables, reports, dashboards), filtering data to a narrower date range or applying pagination reduces rendering load.
+If the app is slow only for specific data sizes, report the issue with the approximate data volume as this helps engineers reproduce the environment.
+Mobile app performance can be improved by closing background apps to free memory, ensuring a strong cellular or Wi-Fi signal, and checking for pending app updates.
+
+---
+SECTION 5: BUG REPORTING DETAILED PROCEDURES
+---
+
+A bug is defined as unexpected behavior that deviates from the documented functionality of the platform.
+Before reporting a bug, verify the behavior is consistently reproducible and not a one-time glitch caused by a transient network or server event.
+Check the community forum and status page to determine if the issue is already known and being tracked.
+When reporting a bug, provide: the exact URL where the bug occurred, the sequence of steps that reproduce the issue, the expected outcome, and the actual outcome.
+Include your browser version (found at chrome://version, about:firefox, or the browser's help menu) and operating system version.
+Screenshots annotated with arrows or highlights pointing to the specific UI element showing the bug are much more useful than unannotated screenshots.
+For data-related bugs (incorrect calculations, missing records), include sample data identifiers (record IDs, not personal data) so engineers can locate the affected data.
+For API bugs, include the full request (HTTP method, endpoint, sanitized headers, request body) and the full raw response received.
+A video recording of the bug being reproduced is the gold standard of bug reports; tools like Loom allow quick screen recordings with annotated replay.
+Intermittent bugs that are difficult to reproduce consistently should still be reported; include the frequency of occurrence and any patterns you've noticed.
+Our engineering team uses reproducibility, user impact (how many users affected), severity (data loss vs. cosmetic), and regression potential to prioritize bug fixes.
+Customers are notified by email when a bug they reported is confirmed by engineering, when a fix is being developed, and when the fix has been deployed.
+Critical bugs (P0) that cause data loss, security exposure, or platform-wide outages are published on the status page and resolved as emergency items.
+High-severity bugs (P1) that affect a significant portion of users or block core workflows receive an initial response within 24 hours.
+Medium-severity bugs (P2) that affect a subset of users or have a workaround are addressed in the next weekly sprint.
+Low-severity bugs (P3) including cosmetic issues, minor UI discrepancies, and rarely exercised code paths are logged and addressed in periodic maintenance releases.
+Bug fix releases are deployed to production multiple times per week; the change log is published at company.com/changelog.
+
+---
+SECTION 6: DATA SYNC ISSUES AND TROUBLESHOOTING
+---
+
+Data sync issues occur when information displayed in the application does not reflect the most recent data state in the backend system.
+The most common cause of sync issues is an interrupted or unstable network connection during a write operation.
+If you see stale data, first trigger a manual sync using the Sync button in the Settings menu or by refreshing the page with Ctrl+F5.
+For the mobile app, pull-to-refresh on the main feed triggers a full data refresh from the server.
+If the manual sync does not update the data, check the sync status indicator in the app footer; it may show a pending sync queue.
+A pending sync queue indicates that local changes are waiting to be uploaded; ensure a stable internet connection and wait for the queue to empty.
+Large sync queues (e.g., hundreds of pending items) may take several minutes to process on slower connections.
+If the sync queue remains stuck for more than 15 minutes, clear the local cache from Settings > Storage > Clear Cache. Note: this discards unsynced local changes.
+Before clearing the cache, check whether there are any unsaved local changes you need to manually note, as cached-only changes will be lost.
+Conflicting changes (the same record edited on two different devices before any sync occurred) are resolved using a "last write wins" strategy by default.
+Enterprise accounts can configure conflict resolution policies (manual merge, first write wins, or field-level merge) in advanced settings.
+Sync logs are available in Settings > Diagnostics > Sync Log and show the timestamp, operation type, and result of each sync event.
+If a sync operation shows a persistent error code in the sync log, include that error code when submitting a support ticket.
+Data sync issues involving more than 50 records or any potential data loss should be escalated as a Priority issue regardless of the subscriber plan level.
+We maintain a 99.99% data durability guarantee; all data written to the platform is replicated across multiple availability zones immediately.
+If data appears to be lost (not just out of sync), report this immediately as a critical issue; recovery from point-in-time backups is possible within 30 days.
+
+---
+SECTION 7: INTEGRATION AND API SUPPORT
+---
+
+We support integrations with over 200 third-party applications through our native integration library and through Zapier, Make (Integromat), and n8n.
+Native integrations are categorized as: Data Sync (bi-directional data flow), Action Trigger (trigger workflows on events), and Embed (UI embedding).
+The API reference documentation is available at developer.company.com/api and includes endpoint descriptions, request/response examples, and error code definitions.
+SDKs are available for JavaScript/TypeScript, Python, Ruby, PHP, Go, and Java and are maintained in our official GitHub organization at github.com/companyname.
+Each SDK release follows semantic versioning; breaking changes are only introduced in major version increments with at least 6 months deprecation notice.
+Webhook configuration for receiving real-time event notifications is available in Settings > Integrations > Webhooks.
+Webhook payloads are signed using HMAC-SHA256; the signature is included in the X-Company-Signature header and should be verified before processing the payload.
+Webhook delivery retries occur with exponential backoff for up to 24 hours if the receiving endpoint returns a non-2xx status code.
+A webhook event is considered delivered after a 2xx response is received within 30 seconds; timeouts are treated as failures and trigger retry.
+Failed webhook deliveries are logged in the Webhook Delivery Log in Settings > Integrations > Webhooks > Delivery History.
+Playground environments are available in the developer dashboard for testing API calls and webhook configurations without affecting production data.
+Sandbox mode can be enabled on a per-API-token basis for testing payment flows and data ingestion pipelines safely.
+Common integration issues:
+- 400 Bad Request: The request body is malformed or missing required fields; check the API documentation for the required schema.
+- 401 Unauthorized: The API token is missing, expired, or invalid; regenerate the token if it has been rotated.
+- 403 Forbidden: The API token lacks the required permission scope for the requested operation; check token scopes in Developer Settings.
+- 422 Unprocessable Entity: The data provided fails validation rules; the response body contains detailed field-level error messages.
+- 429 Too Many Requests: Rate limit exceeded; implement exponential backoff and honor the Retry-After header.
+- 500 Internal Server Error: A server-side error; retry the request and report the correlationId from the response if the error persists.
+Our developer support team is reachable at developer@company.com for API and integration-specific questions beyond what is covered in documentation.
+
+---
+SECTION 8: MOBILE APPLICATION SUPPORT
+---
+
+Our mobile application is available for iOS (iOS 15.0 and later) and Android (Android 10 and later).
+We release mobile app updates on a 2-week sprint cycle; critical bug fix patches may be released outside the cycle.
+Always ensure you are running the latest version of the mobile app before reporting an issue; many resolved bugs are fixed in recent updates.
+App update notifications are shown within the app and can be actioned from the App Store or Google Play Store.
+For iOS, automatic app updates can be enabled in iOS Settings > App Store > App Updates to always have the latest version.
+If the app crashes on launch, force-close the app, clear the app cache (iOS: delete and reinstall; Android: Settings > Apps > Company App > Clear Cache), then reopen.
+App permissions required for full functionality: Camera (document scanning), Notifications (alerts), Local Storage (offline mode), Biometrics (fast login).
+If biometric login stops working on iOS after a system update, it may be due to Touch/Face ID settings being reset; re-register biometrics in iOS Settings.
+If notifications are not received, check that notifications are enabled for the app in the device's notification settings, not just within the app settings.
+The app supports offline mode for viewing and editing data; changes made offline are synced automatically when connectivity is restored.
+Offline mode limitations: new records cannot be created while offline; file attachments cannot be uploaded or downloaded.
+Push notification delivery is handled via APNs (Apple Push Notification Service) for iOS and FCM (Firebase Cloud Messaging) for Android.
+If push notifications are delayed or not received, this may be a temporary issue with the platform's push notification service or the device notification queue; check the status page.
+For Bluetooth or NFC-dependent features within the app, ensure the device's Bluetooth/NFC is enabled and the app has the required permissions.
+Debug logs from the mobile app can be enabled in App Settings > Developer Options > Enable Debug Logging; share the log file via the in-app feedback form when reporting issues.
+
+---
+SECTION 9: DATA RECOVERY AND BACKUP POLICY
+---
+
+All customer data is backed up continuously using streaming replication to geographically redundant data centers.
+Point-in-time recovery (PITR) snapshots are retained for 30 days, allowing restoration of data to any point within the last 30 days.
+Weekly full backups are archived and retained for 1 year for compliance purposes.
+Annual backup snapshots are retained for 7 years where required by contractual or regulatory obligations.
+Data recovery requests must be submitted by account owners or administrators; support agents will not initiate recovery on behalf of users without authorization.
+To request a data recovery, submit a ticket to support@company.com labeled "Data Recovery Request" with the account ID, type of data lost, and approximately when the data was last known to be correct.
+Minor data recovery (single record or small dataset) is typically completed within 4-8 hours.
+Full account data recovery from backup is a more complex operation and may take 1-3 business days depending on data volume.
+Customers receive a download link for recovered data rather than an in-place restoration, to avoid overwriting any current data that may be correct.
+Self-service data recovery for items in the Recycle Bin is available for up to 30 days after deletion; navigate to Settings > Recycle Bin to restore deleted items.
+After 30 days in the Recycle Bin, items are permanently purged from production storage; recovery at this stage requires a backup restoration request.
+Enterprise customers can request custom data retention policies and extended Recycle Bin retention periods as part of their service agreement.
+Do not attempt to work around data loss by rebuilding data from memory; submit a recovery request promptly as delay makes recovery more complex.
+We are not responsible for data loss caused by customer-initiated deletions, accidental overwrites, or API misuse; recovery support is a best-effort service.
+
+---
+SECTION 10: ESCALATION PROCESS AND EXECUTIVE SUPPORT
+---
+
+If a support ticket has not been resolved within the committed SLA timeline, customers can request an escalation.
+Escalation requests should be submitted by replying to the existing support ticket with the subject line prefixed "ESCALATION REQUEST:".
+Escalations are reviewed by a Senior Support Engineer within 2 hours during business hours.
+A critical escalation (data loss, security breach, complete service unavailability) can be initiated 24/7 by calling the emergency support line, available to Priority and Enterprise customers.
+The emergency support phone number is provided in the Priority and Enterprise account welcome emails and in the Account > Support section of the dashboard.
+Escalated tickets are given a dedicated engineer who provides updates every 2 hours until resolution.
+After an escalated ticket is resolved, a post-resolution summary is sent explaining the root cause, the fix applied, and preventive measures taken.
+Enterprise customers experiencing repeated issues can request a Technical Account Review, a formal session with senior engineering and customer success staff to audit their setup.
+Executive escalation contacts (VP of Engineering, VP of Customer Success) are available for enterprise customers through their CSM in cases of prolonged service failures.
+All escalations are tracked in a separate escalation queue and are reviewed weekly by the VP of Support to identify systemic issues.
+Root cause analysis (RCA) reports for P0 incidents are published to status.company.com within 72 hours of incident resolution.
+Enterprise customers receive the full RCA directly from their CSM within 5 business days of the incident resolution.
+Feedback on support quality can be submitted after each resolved ticket via the CSAT (Customer Satisfaction) survey link in the resolution email.
+CSAT feedback is reviewed by support team management and is used to coach agents and improve processes.
+Customers who submit negative CSAT scores are proactively contacted by a senior support manager within 2 business days for follow-up.
+
+---
+SECTION 11: FEATURE REQUESTS AND PRODUCT ROADMAP
+---
+
+Feature requests are submitted through the in-app feedback form, the community forum at community.company.com, or by emailing feedback@company.com.
+Each submitted feature request is assigned a tracking ID and added to our product feedback management system.
+Submitters receive an automated confirmation email with their tracking ID and instructions for following the request's progress.
+The product team reviews all incoming feature requests in weekly triage sessions.
+Requests are evaluated against: strategic alignment with the product roadmap, estimated engineering effort, frequency of request across the customer base, and revenue impact.
+High-demand features (many unique customers requesting the same enhancement) receive elevated prioritization scores in the backlog.
+Customers can upvote existing feature requests in the community forum; upvotes contribute to prioritization decisions.
+Customers who submit feature requests are notified when the request enters Active Development, when it is in Beta Testing, and when it is released to production.
+Features in beta testing are available to customers who opt in through the Beta Features program in Account Settings > Preferences.
+Beta feature feedback is actively solicited and directly influences the final design before general availability release.
+The product roadmap is partially public at company.com/roadmap, showing features planned for the current quarter and a high-level direction for the following two quarters.
+Items on the public roadmap are subject to change; the roadmap represents intentions, not binding commitments.
+Enterprise customers can request roadmap briefings with the product team as part of their Technical Account Review.
+Custom feature development is available for enterprise customers as a professional services engagement; contact your CSM or sales@company.com for scoping.
+Custom-developed features are delivered under a separate statement of work and may or may not be merged into the main product depending on general applicability.

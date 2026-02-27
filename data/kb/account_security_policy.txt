@@ -1,0 +1,279 @@
+ACCOUNT SUSPENSION AND SECURITY POLICY
+
+---
+FREQUENTLY ASKED QUESTIONS — ACCOUNT SECURITY & SUSPENSION
+---
+
+Q: My account was suspended. Why?
+A: Accounts are suspended for: Terms of Service violations, suspected fraud, non-payment, or repeated refund abuse. A suspension notice is sent to your registered email explaining the reason and how to appeal.
+
+Q: How do I appeal a suspension?
+A: Email appeals@company.com within 14 days of suspension with your account details and a written explanation. Appeals must come from your registered email address.
+
+Q: My account was suspended by mistake. What do I do?
+A: Email appeals@company.com immediately. Do NOT create a new account — that is considered circumvention and may result in permanent termination. If the suspension was in error, your account will be reactivated within 2 hours of appeal approval with service credit compensation.
+
+Q: How long does an appeal take?
+A: Our Trust and Safety team reviews suspension cases within 48 hours of the initial report. Supervisor escalations take up to 5 business days.
+
+Q: I think my account was hacked. What should I do?
+A: Immediately: (1) change your password, (2) go to Account Settings > Security > Active Sessions and revoke all sessions, (3) email security@company.com with details. Our security team responds within 1 hour during business hours (9am–6pm Mon–Fri).
+
+Q: Someone logged into my account from a different location.
+A: Revoke all sessions from Account Settings > Security > Active Sessions. Change your password immediately and enable 2FA if not already active. Report to security@company.com.
+
+Q: How do I secure my account?
+A: Enable Two-Factor Authentication (Settings > Security > 2FA). Use a unique, strong password (12+ characters). Review active sessions regularly. Never share login credentials.
+
+Q: Will I lose my data if my account is suspended?
+A: Temporary and full suspensions do not delete data. If an account remains unpaid for 30+ days post-suspension and is deactivated, data is retained for 14 more days. After that window, data is permanently deleted.
+
+Q: I received an email saying my password was reset but I didn't request it.
+A: Someone may be attempting to access your account. Click the "I did not request this reset" link in the email — this locks your account immediately. Then contact security@company.com.
+
+Q: I found a security vulnerability in your platform. What do I do?
+A: Submit it through our secure portal at security.company.com/disclose with full reproduction steps. We acknowledge within 24 hours and provide a fix timeline within 72 hours. Our Bug Bounty Program offers rewards from $100–$10,000 based on severity.
+
+Q: I received a phishing email claiming to be from you. What do I do?
+A: Do not click any links. Forward the email to security@company.com. We will investigate and warn other users if the phishing campaign is confirmed.
+
+Q: Can a support agent see my password?
+A: Never. Passwords are stored as bcrypt hashes and cannot be read by anyone, including our engineers. Agents can only initiate a forced password reset — they cannot view or set your password directly.
+
+Q: How do I delete my account and data?
+A: Go to Account Settings > Account > Delete Account, or email privacy@company.com with a deletion request. Data is fully deleted within 30 days of account closure per our data retention policy.
+
+Q: My subscription is cancelled. When is my data deleted?
+A: Data is preserved for 30 days after cancellation to allow reactivation. After 30 days with no reactivation, data deletion begins.
+
+Q: I was charged during my suspension. Can I get a refund?
+A: Recurring payments are paused during suspension — you should not be charged. If a charge did occur during suspension, contact billing@company.com with the invoice number for immediate investigation and refund.
+
+---
+SECTION 1: ACCOUNT SUSPENSION OVERVIEW
+---
+
+
+A suspension notice is sent to the registered email address with the specific reason and any steps to appeal the decision.
+To appeal a suspension, the customer must email appeals@company.com with their account details and a written explanation within 14 days.
+Accounts suspended for non-payment are automatically reactivated within 2 hours of successful payment processing.
+For security concerns such as phishing or unauthorized data access, customers should email security@company.com with all details immediately.
+Our security team acknowledges reports within 1 hour during business hours (9am-6pm Mon-Fri).
+Subscription cancellation takes effect at the end of the currently paid billing period. No data is deleted for 30 days after cancellation, allowing for account reactivation.
+
+---
+SECTION 2: DETAILED ACCOUNT SUSPENSION PROCEDURES
+---
+
+Account suspension is a protective measure applied when activities on an account violate our Terms of Service, endanger other users, or create financial risk for the platform.
+There are three categories of account suspension: temporary suspension, full suspension, and permanent termination.
+A temporary suspension lasts between 24 hours and 7 days and is applied for minor or first-time violations.
+A full suspension prevents all account access and is applied when violations are confirmed and require investigation.
+Permanent termination is irreversible and is reserved for fraud, criminal activity, or severe repeated violations.
+When an account is suspended, all active sessions are immediately terminated and all API tokens associated with the account are revoked.
+Scheduled recurring payments are paused during suspension and will not be charged until the account is reactivated.
+Any active data exports or pending file downloads at the time of suspension will be cancelled immediately.
+Sub-accounts linked to a suspended primary account are also suspended as a precautionary measure.
+The suspension notification email includes a case reference number that must be quoted in all correspondence related to the appeal.
+Our Trust and Safety team reviews each suspension case within 48 hours of the initial report that triggered it.
+If an account is suspended due to suspected fraudulent payment, all outstanding orders associated with the account are placed on hold pending verification.
+Accounts detected sharing login credentials with multiple users are flagged for a Terms of Service review prior to suspension.
+Automated systems monitor for unusual login patterns, bulk data downloads, and account activity that deviates significantly from historical behavior.
+When automated detection flags an account, a human reviewer must confirm the violation before suspension is applied in all non-emergency cases.
+Emergency suspensions triggered by confirmed fraud or active security breaches may be applied immediately without prior human review.
+Customers who believe they have been suspended in error should not attempt to create a new account; this is considered circumvention and will result in permanent termination.
+The appeals process involves submitting a written explanation, supporting evidence, and agreeing to an identity verification check.
+Appeals submitted by email must come from the registered email address on file; appeals from other email addresses will not be processed.
+If an appeal is denied, the customer receives a detailed explanation of the evidence supporting the suspension decision.
+A second appeal can be submitted only if new evidence is presented; repeat appeals without new evidence are automatically declined.
+In cases where suspension was incorrectly applied, the account is reactivated within 2 hours of the appeal approval, and any lost service time is compensated with account credits.
+Account credits issued as compensation for erroneous suspension are calculated based on the daily rate of the customer's subscription plan.
+Customers undergoing an active suspension cannot access support chat but may contact us by email at appeals@company.com.
+
+---
+SECTION 3: SECURITY BREACH AND INCIDENT RESPONSE
+---
+
+A security breach is defined as any unauthorized access to, disclosure of, or destruction of customer data or system assets.
+Our incident response team operates 24 hours a day, 7 days a week to respond to reported security events.
+All employees are required to complete security incident response training annually and demonstrated proficiency assessments semi-annually.
+When a potential breach is detected, the incident is assigned a severity level between P0 (critical) and P3 (low) based on the scope and nature of the exposure.
+A P0 breach involves exposure of sensitive personal data, financial information, or credentials affecting more than 1,000 users and requires immediate containment within 1 hour.
+A P1 breach involves targeted unauthorized access to specific accounts or limited system components and requires response within 4 hours.
+A P2 breach involves unauthorized read-only access to non-sensitive data and requires response within 24 hours.
+A P3 breach involves attempted but unsuccessful intrusion attempts or minor system anomalies and requires response within 72 hours.
+Upon detecting a P0 or P1 security incident, affected accounts are automatically locked pending a password reset by the account holder.
+Affected customers are notified of a breach via the registered email address within 72 hours of the breach being confirmed, in compliance with GDPR Article 33 and state breach notification laws.
+Breach notification emails include the nature of the data exposed, the likely source of the breach, steps taken to contain it, and recommended actions for the customer.
+Our legal and compliance teams evaluate breach notification obligations under applicable laws in all jurisdictions where affected customers reside.
+All security incidents are documented in a private incident log that is reviewed monthly by our Chief Information Security Officer (CISO).
+Third-party security audits are conducted quarterly to assess and improve our incident detection and response capabilities.
+Penetration testing is performed by certified external security firms at least twice per year and after any major platform architecture changes.
+Upon confirming a data breach, a dedicated incident hotline is activated for affected customers at breach-support@company.com.
+Customers participating in our Bug Bounty Program who discover and responsibly disclose security vulnerabilities are eligible for rewards between $100 and $10,000 depending on severity.
+All vulnerability disclosures must be submitted through our secure portal at security.company.com/disclose with full reproduction steps.
+Submitted vulnerability reports are triaged within 24 hours and a fix timeline is communicated to the reporter within 72 hours.
+We commit to not pursuing legal action against security researchers who discover and disclose vulnerabilities in good faith per our responsible disclosure policy.
+Post-incident, a root cause analysis report is prepared within 14 days and made available to enterprise customers upon request.
+
+---
+SECTION 4: PASSWORD AND AUTHENTICATION POLICIES
+---
+
+Passwords must be at least 12 characters long and include a combination of uppercase letters, lowercase letters, numbers, and special characters.
+Common passwords, dictionary words, and passwords that have appeared in known data breaches are rejected by our password validation system.
+Password strength is evaluated in real time during creation and customers are guided toward stronger choices before submission is accepted.
+Users are required to change their password if it matches a password found in any publicly known data breach database.
+Passwords are stored using bcrypt hashing with a minimum work factor of 12; plaintext passwords are never stored or transmitted.
+Password history is enforced: customers cannot reuse any of their last 10 passwords.
+Temporary passwords issued by support agents expire after 24 hours and must be changed on first login.
+Password reset links are cryptographically signed, unique per request, and expire after 15 minutes for security.
+If a password reset link expires before use, the customer must initiate a new reset request; expired links cannot be extended.
+Support agents cannot view, reveal, or set permanent passwords for customer accounts; they can only initiate a forced password reset flow.
+Enterprise accounts can enforce custom password policies including minimum length, complexity, rotation intervals, and lockout thresholds through the Admin panel.
+Shared account logins are prohibited; each user must have a unique login credential tied to their individual identity.
+Service account credentials used for API integrations must be rotated at least every 90 days and must not be shared across multiple services.
+Passphrase-style passwords (long phrases without special characters) are accepted provided they meet the minimum entropy requirements.
+Customers are encouraged to use a reputable password manager to generate and store unique passwords for each service they use.
+Our systems log failed password attempts, rate-limit authentication requests, and trigger alerts for patterns consistent with credential stuffing attacks.
+After 5 consecutive failed login attempts within a 10-minute window, the account is locked for 30 minutes automatically.
+After 10 consecutive failed attempts across multiple windows, the account is locked indefinitely and requires manual verification to unlock.
+Password reset via SMS fallback is available for accounts with a verified phone number but is considered less secure than email-based reset.
+Biometric authentication (fingerprint, face ID) is supported on mobile applications as a convenience login method in addition to standard credentials.
+
+---
+SECTION 5: TWO-FACTOR AUTHENTICATION (2FA) DETAILED POLICY
+---
+
+Two-Factor Authentication (2FA) adds a second layer of verification beyond a password, significantly reducing the risk of unauthorized account access.
+We support the following 2FA methods: authenticator apps (TOTP), SMS one-time codes, hardware security keys (FIDO2/WebAuthn), and email-based OTPs.
+Authenticator apps such as Google Authenticator, Microsoft Authenticator, and Authy are the recommended 2FA method due to their resilience against SIM swap attacks.
+To set up TOTP-based 2FA, navigate to Account Settings > Security > Two-Factor Authentication and scan the displayed QR code with your authenticator app.
+After scanning, enter the 6-digit code to verify the setup is working before activation is confirmed.
+Upon enabling 2FA, the system generates 10 single-use backup codes that can be used if the primary 2FA method is unavailable.
+Backup codes must be stored securely; each code can only be used once and they are invalidated if 2FA is disabled and re-enabled.
+SMS-based 2FA sends a one-time code to the verified mobile number associated with the account; codes expire after 10 minutes.
+SMS-based 2FA is susceptible to SIM swap attacks and is therefore not recommended for accounts with access to sensitive data.
+Hardware security keys using the FIDO2/WebAuthn standard provide the highest level of 2FA protection and are phishing-resistant.
+Up to 5 hardware security keys can be registered per account, allowing for multiple backup keys.
+Enterprise administrators can mandate 2FA for all users under their organization and can specify which 2FA methods are permitted.
+If a user loses access to their 2FA method, they must contact support and complete an enhanced identity verification process to regain access.
+Identity verification for 2FA recovery requires submitting a government-issued photo ID and confirmation from the registered email address.
+2FA recovery typically takes 2-3 business days to process to prevent social engineering attacks.
+Accounts with 2FA enabled receive an email notification each time a new device logs in successfully.
+Disabling 2FA on an account generates an immediate alert email and requires re-confirmation with the existing 2FA method before proceeding.
+Enterprise organizations can enable conditional access rules that require 2FA only from unrecognized networks or geographic locations outside the organization's defined perimeter.
+Our system supports 2FA enforcement at the role level, allowing organizations to require stronger authentication only for administrator or privileged roles.
+All 2FA configuration changes are logged and auditable by organization administrators in the Security Audit Log.
+
+---
+SECTION 6: ACCOUNT RECOVERY PROCEDURES
+---
+
+Account recovery is the process of regaining access to an account when standard login methods are unavailable.
+The first step in account recovery is always attempting the standard password reset via the registered email address.
+If the registered email is no longer accessible, the customer must contact our support team and provide identity verification documents.
+Accepted identity verification documents include government-issued photo IDs such as passports, national ID cards, or driver's licenses.
+The name on the identity document must match the name registered on the account; discrepancies require additional verification steps.
+For business accounts, recovery may require verification from an authorized representative and submission of business registration documents.
+Account recovery without access to the registered email typically takes 3-5 business days due to the enhanced verification requirements.
+We do not offer expedited account recovery without charge; standard timelines apply regardless of urgency claimed.
+If a customer suspects their registered email has also been compromised, they should report this and our security team will assist in securing both accounts simultaneously.
+After successful identity verification, a new verified email address is set on the account and a password reset is initiated to that new address.
+Any active 2FA methods on the account are suspended during recovery and must be re-enrolled after access is restored.
+All account recovery attempts are logged with timestamps, IP addresses, and verification methods used for security audit purposes.
+Customers who have previously set up account recovery security questions can use these as a supplementary verification method, though this alone is not sufficient for email change requests.
+Security questions must be answered character-for-character as originally set; case-insensitive matching is applied.
+Accounts that have been inactive for more than 2 years require additional ownership verification before recovery is processed.
+After account recovery is complete, the customer receives a full summary of security changes made during the process.
+Our support team will never ask for a customer's full password under any circumstances during the recovery process.
+If you receive a call or message claiming to be from our support team asking for your full password, this is a phishing attempt; report it to security@company.com immediately.
+
+---
+SECTION 7: SUSPICIOUS ACTIVITY MONITORING AND ALERTS
+---
+
+Our platform employs a real-time threat detection system that continuously analyzes account activity for anomalous patterns.
+Signals monitored include login location, login time, device fingerprint, API usage volume, data export volume, and navigation patterns.
+When anomalous activity is detected, the system assigns a risk score to the session. Sessions above the threshold trigger a step-up authentication challenge.
+Step-up authentication requires the user to re-verify their identity via 2FA or email OTP before continuing the flagged action.
+If step-up authentication fails or is not completed within 5 minutes, the session is terminated and the account is flagged for review.
+Customers receive an email alert any time a new device or browser is used to log into their account successfully.
+Login alerts include the device type, approximate geographic location derived from IP address, and timestamp of the login event.
+If the customer did not perform the login, the alert email contains a one-click "Secure My Account" button that immediately revokes all sessions and triggers a password reset.
+Simultaneous logins from geographically distant locations within a short timeframe (impossible travel) trigger an automatic risk flag.
+Bulk data download exceeding 500 MB within a 1-hour period flags the account for an automated security review.
+Repeated API calls with authentication errors within a short window trigger rate limiting and temporary IP blocking for that endpoint.
+Customers can review their full login history, including successful and failed attempts, from Account Settings > Security > Login History.
+Login history is retained and viewable for the past 90 days.
+Customers can set custom security alerts through Account Settings > Security > Alerts, specifying which event types should trigger notifications.
+Notification channels for security alerts include email, SMS, push notifications (mobile app), and webhook integrations.
+Enterprise customers can pipe security alert events to their SIEM (Security Information and Event Management) systems via our security webhook API.
+The security webhook payload includes event type, timestamp, account ID, IP address, device information, and a severity level classification.
+Our threat intelligence team subscribes to multiple cybersecurity feeds and proactively blocks IP ranges associated with known malicious actors.
+Geo-blocking can be configured by enterprise administrators to deny login attempts from specific countries or regions.
+IP allowlisting for enterprise accounts ensures that only connections from approved IP addresses or CIDR ranges can access the account.
+
+---
+SECTION 8: DATA PRIVACY AND ACCESS CONTROL
+---
+
+We are committed to processing personal data in accordance with GDPR, CCPA, and other applicable privacy regulations.
+Customers have the right to access, correct, port, and request deletion of their personal data at any time.
+Data access requests are processed within 30 days; complex requests may take up to 60 days with advance notice to the customer.
+Personal data exported in response to a data access request is provided in a machine-readable format (JSON or CSV).
+Account deletion requests result in permanent removal of personal data from our production systems within 30 days.
+Backups containing personal data are purged within 90 days following an account deletion request, in accordance with our data retention schedule.
+We do not sell personal data to third parties under any circumstances.
+Data shared with third-party service providers is governed by Data Processing Agreements (DPAs) that enforce equivalent privacy standards.
+A current list of third-party sub-processors is maintained and publicly accessible at company.com/sub-processors.
+Customers are notified at least 30 days in advance of any new sub-processor being added that will process their personal data.
+Access to customer data within our organization is governed by role-based access control (RBAC) with least-privilege principles.
+Customer support agents can access the minimum data necessary to resolve support tickets; they cannot access payment card details or sensitive credentials.
+All internal access to customer data is logged and subject to regular access review audits.
+Data at rest is encrypted using AES-256 encryption. Data in transit is protected by TLS 1.2 or higher.
+Database encryption keys are managed by a dedicated key management service with automated rotation every 12 months.
+Our data centers are SOC 2 Type II certified and undergo annual third-party security audits.
+Customers can appoint a Data Protection Officer contact in their enterprise account settings for all regulatory correspondence.
+
+---
+SECTION 9: SESSION MANAGEMENT AND DEVICE TRUST
+---
+
+User sessions are managed using short-lived cryptographically signed JWT tokens with a 1-hour expiry.
+Refresh tokens with a 30-day rolling window are used to silently re-authenticate active sessions without requiring re-login.
+A user can have a maximum of 10 concurrent active sessions across different devices.
+All active sessions can be viewed and individually revoked from Account Settings > Security > Active Sessions.
+The "Sign Out All Devices" option in Account Settings immediately invalidates all refresh tokens and terminates all active sessions globally.
+Trusted device recognition uses a combination of device fingerprinting and a persistent cookie to identify returning trusted devices.
+A device is marked as trusted after successful login plus confirmed 2FA verification on that device.
+The trust status of a device persists for 90 days; after 90 days, 2FA re-verification is required from that device.
+Customers can view, name, and revoke trusted devices from Account Settings > Security > Trusted Devices.
+Sessions are automatically terminated after 30 minutes of inactivity; users are warned at the 25-minute mark.
+Enterprise administrators can configure shorter session timeout windows (minimum 5 minutes) for higher-security environments.
+The mobile app maintains a longer background session (7 days) but requires biometric or PIN re-verification whenever the app returns to the foreground after 15 minutes of inactivity.
+Our API uses OAuth 2.0 with scoped access tokens; tokens can be granted granular permissions that limit the operations they can perform.
+API tokens do not expire by default but can be set to expire on a schedule through the developer dashboard.
+Rotating API tokens is strongly recommended; our API supports zero-downtime token rotation by accepting a brief dual-validity window.
+All API token creation, usage, and revocation events are included in the security audit log.
+Service accounts can be created for automated processes; service accounts do not have UI access and are limited to declared API permission scopes.
+
+---
+SECTION 10: ENTERPRISE ACCOUNT SECURITY FEATURES
+---
+
+Enterprise accounts have access to an advanced security dashboard providing a consolidated view of organization-wide security posture.
+The security dashboard displays metrics including active session count, failed login attempts, 2FA adoption rate, and recent security events.
+Single Sign-On (SSO) via SAML 2.0 is available for enterprise accounts, allowing integration with identity providers such as Okta, Azure AD, OneLogin, and PingIdentity.
+When SSO is enabled, username/password login is disabled for all organization users; all authentication is routed through the configured identity provider.
+Enterprise SSO setup requires a Domain Verification step where the customer must add a DNS TXT record to prove ownership of their email domain.
+SCIM (System for Cross-domain Identity Management) provisioning is supported for automatic user creation, suspension, and deactivation based on the identity provider's directory.
+SCIM provisioning ensures that when an employee leaves the organization and is deactivated in the IdP, their platform account is automatically suspended within 15 minutes.
+Organization-wide security policies can be enforced via the Enterprise Admin Panel, including password strength requirements, 2FA mandates, and allowed login methods.
+Audit logs for enterprise accounts capture all user actions, administrative changes, and security events with immutable timestamps and user attribution.
+Audit logs can be exported in CSV or JSON format and can be streamed to external log management platforms (Splunk, Datadog, ELK) via secure webhook.
+Enterprise accounts can define a Security Contact who receives all security-related notifications and alerts for the organization.
+IP restriction policies at the organization level block users from logging in outside approved networks, providing an additional access control layer.
+Enterprise accounts include a dedicated Customer Security Liaison from our security team who is available for quarterly security reviews.
+Vulnerability scan reports and security questionnaire completion support are available to enterprise customers for compliance and vendor risk management purposes.
+Enterprise accounts can opt in to our Advanced Threat Protection add-on, which provides enhanced behavioral analytics and automated threat response capabilities.

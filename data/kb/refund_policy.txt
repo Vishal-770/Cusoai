@@ -1,0 +1,215 @@
+REFUND REQUEST POLICY
+
+---
+FREQUENTLY ASKED QUESTIONS — REFUNDS
+---
+
+Q: How do I get a refund?
+A: Log into your account, go to Billing > Invoice History, click the invoice, and select "Request Refund". Alternatively email billing@company.com with your invoice number. Decisions are made within 2 business days.
+
+Q: How long does a refund take?
+A: Credit/debit cards: 5–7 business days. PayPal: instant to PayPal balance. ACH/bank transfer: 3–5 business days. American Express: up to 10 business days.
+
+Q: I want to cancel and get my money back. Am I eligible?
+A: You are eligible for a full refund if you cancel within 30 days of your purchase date. Monthly renewals are only refundable if cancelled within 24 hours of the renewal charge.
+
+Q: I was charged twice / double billed. What do I do?
+A: Email billing@company.com immediately with both invoice numbers. Duplicate charges are treated as a billing error and refunded in full within 5–7 business days after verification.
+
+Q: I bought the wrong plan by accident. Can I get a refund?
+A: Yes. Accidental purchases are eligible for a full refund within 30 days. Select "Accidental Purchase" as the reason when submitting your refund request.
+
+Q: I upgraded my plan and want a refund on the upgrade charge.
+A: Upgrade charges are refundable within 30 days of the upgrade date, independent of the original subscription start date.
+
+Q: Why was my refund denied?
+A: Common reasons: outside the 30-day window, the item is non-refundable (setup fees, promotional plan, digital download without defect), or the account violated Terms of Service. The denial email will include the specific reason and any available alternatives.
+
+Q: Can I appeal a refund denial?
+A: Yes. Reply to the denial email and request a supervisor review. Escalated reviews are completed within 5 business days.
+
+Q: I cancelled my annual plan. Do I get a partial refund?
+A: If cancelled within 30 days of purchase, yes — a full refund. If cancelled after 30 days, no partial refund is issued; the account remains active until the annual period ends.
+
+Q: My refund hasn't arrived yet. What should I do?
+A: First check that your bank's processing time has passed (up to 10 business days for some cards). If still missing, email billing@company.com with your refund confirmation number.
+
+Q: Can I get a refund as account credit instead of back to my card?
+A: Yes. You can request a store credit (applied to your account balance) instead of a card refund. Store credits are applied immediately.
+
+Q: I redeemed a gift card / promo code. Is it refundable?
+A: Gift cards and prepaid codes are non-refundable after redemption. Promotional plan purchases specifically marked "non-refundable" at purchase are also excluded.
+
+Q: Can I get a refund for a training session I missed?
+A: Training sessions are refundable if cancelled more than 48 hours before the scheduled time. Cancellations within 48 hours receive a 50% refund.
+
+Q: I have a consumer protection right to a refund in my country (e.g., EU). Does your policy honour it?
+A: Yes. We honour consumer protection rights under applicable law (including EU consumer rights legislation) regardless of our standard policy. State this clearly in your refund request.
+
+Q: What is not refundable?
+A: One-time setup/onboarding fees, custom development work, add-ons after the first billing month (unless purchased in error), domain registration fees, SMS credit top-ups, and items explicitly sold as non-refundable.
+
+---
+SECTION 1: STANDARD REFUND POLICY OVERVIEW
+---
+
+
+Refunds are processed to the original payment method within 5-7 business days after approval.
+To initiate a refund, the customer must provide their order ID and the reason for the refund request.
+Digital products that have been downloaded are not eligible for a refund unless there is a proven technical defect.
+Subscription services can be cancelled at any time, but partial month refunds are not provided.
+For defective physical products, we offer a full refund or replacement at no additional cost.
+If a refund is approved, the customer will receive a confirmation email with the expected processing timeline.
+Bank transfer refunds may take an additional 3-5 business days beyond our standard processing time.
+
+---
+SECTION 2: REFUND ELIGIBILITY IN DETAIL
+---
+
+All purchases are subject to our 30-day full refund window, which begins at 12:00 AM UTC on the day after the transaction date.
+The 30-day refund window applies to new subscriptions, plan upgrades, and annual plan purchases.
+For annual plans, the 30-day refund window covers the entire prepaid year; a pro-rated refund is issued for the remaining months if cancelled within 30 days.
+Monthly subscription renewals are not eligible for a refund after the renewal date unless the cancellation is initiated within the first 24 hours of a new billing cycle.
+Customers who cancel a monthly subscription within 24 hours of renewal may receive a discretionary refund credit equal to one month's subscription value; this is reviewed case by case.
+Refund eligibility is determined by the transaction date on the invoice, not the date the subscription feature was first used.
+If a customer upgrades from one plan to another, the upgrade charge is eligible for a refund within 30 days of the upgrade date, separate from the original subscription.
+Refunds are not available for accounts that have violated the Terms of Service; such refund requests are automatically denied.
+Accounts that have previously been refunded more than twice within a 12-month period may be flagged for refund abuse review.
+Refund abuse is defined as a pattern of purchasing subscriptions intending to use features and then requesting refunds as a matter of course.
+In cases of suspected refund abuse, the Trust and Safety team may deny refund requests and escalate the account for Terms of Service review.
+Customers who have received a refund and subsequently sign up for a new trial are subject to additional restrictions; a second trial cannot be initiated within 6 months.
+
+---
+SECTION 3: NON-REFUNDABLE ITEMS AND EXCEPTIONS
+---
+
+One-time setup fees, onboarding fees, and professional services fees are non-refundable once the service has been delivered.
+Custom development or configuration work delivered under a statement of work is non-refundable upon completion and acceptance.
+Add-on purchases (additional storage, extra API calls, premium support packages) are non-refundable after the first billing month unless they were purchased in error.
+Promotional or discounted subscription plans that were specifically described as "non-refundable" at the time of purchase are not eligible for refund.
+Domain registration or third-party service fees billed through our platform are non-refundable as these are pass-through costs with no return allowance from the registrar.
+SMS or communication credit top-ups are subject to a specific credit policy and do not qualify under the standard refund policy.
+Hardware or physical goods must be returned in original, unopened packaging within 30 days; a return merchandise authorization (RMA) must be obtained before returning.
+Returned hardware items are inspected upon receipt; items with signs of use, damage, or missing components are subject to a restocking fee of up to 25%.
+Gift cards and prepaid codes are non-refundable after redemption to the account.
+Training session fees are refundable if cancelled more than 48 hours before the scheduled session; cancellations within 48 hours receive a 50% refund.
+Webinar and event registration fees are non-refundable within 24 hours of the event, but can be transferred to another attendee with prior notice.
+
+---
+SECTION 4: REFUND REQUEST PROCESS STEP BY STEP
+---
+
+Step 1: Log into your account and navigate to Billing > Invoice History to locate the invoice for which you are requesting a refund.
+Step 2: Click on the invoice to open the invoice detail view and locate the "Request Refund" button.
+Step 3: Select the reason for the refund from the provided dropdown (Unsatisfied with Service, Technical Issue, Accidental Purchase, No Longer Needed, or Other).
+Step 4: For "Other" or "Technical Issue" reasons, a free-text explanation field appears; fill in the details to support your request.
+Step 5: Submit the refund request. A confirmation email with a reference number is sent immediately.
+Alternatively, customers can submit refund requests by emailing billing@company.com with the invoice number and refund reason.
+Telephone refund requests are not accepted to ensure proper documentation and avoid errors.
+Live chat support can assist with refund inquiries but cannot process refunds directly; chat agents will submit a refund ticket on your behalf.
+Refund tickets are reviewed within 2 business days. The customer is notified of the decision by email.
+If the refund is approved, a second email is sent confirming the refund amount and the expected date of return to the original payment method.
+If the refund is denied, the email explains the reason for denial and, where applicable, available alternatives such as account credits or plan downgrades.
+Refund decisions can be escalated by replying to the denial email and requesting a supervisor review, which is completed within 5 business days.
+Customers with a valid consumer protection law right to a refund (such as under EU consumer rights legislation) should state this in their request; such rights are honored irrespective of our standard policy.
+
+---
+SECTION 5: REFUND TIMELINES BY PAYMENT METHOD
+---
+
+Credit and debit card refunds are processed within 5-7 business days to the statement of the issuing bank.
+The refund first appears in our system as a pending credit within 24-48 hours; the bank may take additional time to post the credit to the cardholder's statement.
+Visa and Mastercard typically post credits within 3-5 business days after our processing date.
+American Express credits may take up to 7-10 business days to appear on the statement due to their internal processing timelines.
+PayPal refunds are instant to the customer's PayPal balance; withdrawal to a bank account from PayPal follows PayPal's own timeline (typically 3-5 business days).
+Bank transfer and ACH refunds require the customer's banking details (routing number and account number) if not already on file.
+ACH refunds are initiated as a credit ACH transfer and typically arrive within 3-5 business days after initiation.
+SEPA bank transfer refunds within the EU typically arrive within 1-2 business days after initiation.
+UK BACS refunds typically arrive within 3-5 business days.
+Wire transfer refunds are only issued if the original payment exceeded $1,000; smaller wire payment refunds are processed via bank transfer.
+Wire transfer refunds may take 7-14 business days due to international banking processing requirements.
+Intermediary bank fees deducted from wire transfer refunds are the responsibility of the receiving bank and cannot be reimbursed by us.
+Store credit refunds (issued as account billing credits) are applied immediately and visible in the Billing > Credits section of the account.
+If a refund fails due to a closed or expired payment method, the customer will be contacted to provide updated payment information for reprocessing.
+Failed refunds are retried once with the original payment method before the billing team contacts the customer for alternative arrangements.
+
+---
+SECTION 6: PARTIAL REFUNDS AND PRO-RATED ADJUSTMENTS
+---
+
+Partial refunds are issued when a customer is eligible for a refund on only a portion of their purchase.
+Partial refunds are calculated based on the proportion of the billing period that was unused at the time of the refund request.
+For annual plans cancelled after the 30-day full refund window has passed, no partial refund is provided—the account continues until the end of the annual period.
+Exceptions to the no-partial-refund policy for annual plans may be made at management discretion in cases of severe and documented service failures.
+When a plan is downgraded mid-cycle, a credit note is generated for the difference between the two plan prices for the remaining days in the cycle.
+Credits generated from plan downgrades are applied automatically to the next invoice and reduce the amount billed.
+If the total billing credit from a downgrade exceeds the next invoice amount, the surplus credit rolls over to subsequent invoices.
+Credit balances on closed accounts are refunded to the original payment method if the credit was the result of a billing error or overpayment exceeding $10.
+Credit balances below $10 associated with closed accounts are not refunded and are forfeited upon account closure.
+Partial refunds for add-on features are calculated based on the unused portion of the current add-on billing month.
+Pro-rated calculations are always based on calendar days, not on usage volume or feature access during the billing period.
+
+---
+SECTION 7: REFUNDS FOR TECHNICAL DEFECTS AND SERVICE FAILURES
+---
+
+If a technical defect prevents a customer from using a core product feature, they may be entitled to a refund or service credit regardless of the standard refund window.
+A technical defect must be documented by our engineering team to qualify for an out-of-window refund; self-reported errors require investigation before a refund is issued.
+To report a technical defect for refund consideration, contact support@company.com with steps to reproduce, error messages, screenshots, and account details.
+If the defect is confirmed by our engineering team to be a platform-side bug, a full or partial refund is issued at the team's discretion based on the impact of the defect.
+Service outages that affect the customer's access to the platform for more than 2 consecutive hours may qualify for an SLA credit.
+SLA credits are calculated as a percentage of the monthly plan fee based on defined uptime tiers:
+- 99.9% to 99.0% uptime in a calendar month: 5% credit
+- 98.9% to 95.0% uptime: 15% credit
+- Below 95.0% uptime: 30% credit
+SLA credits are not automatic; they must be requested within 30 days of the end of the affected month by submitting a request to sla@company.com.
+Enterprise customers with custom SLA terms defined in their MSA receive SLA credits according to their contract rather than the standard tiers above.
+Service outages due to scheduled maintenance, customer-side configuration errors, or third-party service failures do not qualify for SLA credits.
+Our status page at status.company.com provides real-time and historical uptime data for all platform components.
+
+---
+SECTION 8: RETURN POLICY FOR PHYSICAL PRODUCTS
+---
+
+Physical products (hardware, accessories, printed materials) sold through our store are eligible for return within 30 days of delivery.
+The delivery date is determined by the carrier's confirmed delivery scan; the 30-day return window begins from that date.
+Returns must be initiated by submitting a return request at company.com/returns or by contacting support@company.com.
+A Return Merchandise Authorization (RMA) number is issued within 2 business days of a return request.
+Items returned without an RMA number may be refused at the warehouse and returned to the sender at their expense.
+The customer is responsible for return shipping costs unless the return is due to a defect or fulfillment error.
+We provide a prepaid return label for defective or incorrectly shipped items; the cost of the prepaid label is covered by us.
+Returned items must be in their original packaging with all accessories, manuals, and components included.
+Incomplete returns (missing accessories or documentation) are subject to a partial refund or restocking fee.
+Upon receipt and inspection of the return, a refund is issued within 5 business days.
+Defective products under warranty may be repaired or replaced rather than refunded, depending on the warranty terms and availability of replacement units.
+Product warranty details are included with each hardware product shipment and are available on the product's page on our website.
+
+---
+SECTION 9: CHARGEBACKS AND DISPUTE RESOLUTION
+---
+
+A chargeback is a reversal process initiated by the customer's bank or credit card issuer when the customer disputes a charge.
+We encourage customers to contact us directly to resolve billing disputes before initiating a chargeback, as chargebacks carry costs and delays for both parties.
+When a chargeback is received, the disputed amount is immediately placed in a temporary hold and the associated account may be suspended pending investigation.
+Our billing team has 7-10 business days to respond to a chargeback with evidence to confirm or refute the dispute.
+Evidence submitted in chargeback responses includes transaction records, usage logs, communication records, and subscriber agreement acceptance.
+If the chargeback is resolved in the customer's favor, the account remains suspended to prevent further losses.
+If the chargeback is resolved in our favor, the transaction amount is retained and the account may be reactivated subject to a review.
+Customers whose chargebacks are denied by the bank but who have a legitimate billing concern may contact us to pursue an alternative resolution.
+Repeated chargebacks by the same account can result in permanent termination and blacklisting of payment methods per our fraud prevention policies.
+Friendly fraud (intentional chargebacks on legitimate transactions) is actively contested and may be referred to the appropriate authorities where applicable.
+
+---
+SECTION 10: REFUNDS FOR ENTERPRISE AND VOLUME CUSTOMERS
+---
+
+Enterprise refund policies are defined in the individual customer's Master Service Agreement (MSA) and may differ from the standard policy described above.
+Enterprise MSAs may include custom refund windows, SLA-triggered credit schedules, and specific escalation paths for financial disputes.
+Enterprise customers should refer to their MSA terms and contact their dedicated account manager for refund and credit requests.
+Volume license customers who reduce their seat count mid-contract are subject to the terms outlined in their volume license agreement.
+Seat count reductions are generally not refunded during an active contract period; reductions take effect at the next contract renewal.
+Enterprise annual contracts that are terminated early are subject to early termination fees as defined in the contract; unused days are not refunded beyond any early termination credit clause.
+Enterprise customers migrating between platforms (off-boarding transitions) may be eligible for a pro-rated exit credit as a goodwill gesture, subject to management approval.
+Billing disputes for enterprise accounts are escalated to the Senior Account Manager and the VP of Customer Success for resolution within 5 business days.
+Enterprise customers have a dedicated billing inbox at enterprise_billing@company.com staffed by Senior Billing Specialists.
+Quarterly billing reviews are offered to enterprise customers to ensure billing accuracy and address any discrepancies proactively before they become disputes.

@@ -40,10 +40,10 @@ Create a new endpoint in your FastAPI server (`src/app.py`).
 1. **User Submission Form:** A simple text box mimicking a support UI where the user pastes the angry ticket.
 2. **Fetch API:** The Next.js client sends the ticket to the FastAPI backend.
 3. **Display Results Component:**
-   - **Top Left:** Show the DeBERTa "Category" and Confidence %.
-   - **Top Right:** Show the RoBERTa "Urgency" and Confidence %.
+   - **Top Left:** Show the **FastText** "Category" and Confidence %.
+   - **Top Right:** Show the **VADER** "Urgency" and Sentiment Score.
    - **Middle Tier:** Display the retrieved raw English policies from FAISS to prove the system isn't guessing.
-   - **Bottom Tier:** Render the final, localized Gemini 1.5 Flash draft reply for the agent to review.
+   - **Bottom Tier:** Render the final, localized Gemini/Claude draft reply for the agent to review.
 
 ---
 
