@@ -140,6 +140,7 @@ async def chat(request: ChatRequest, raw: Request):
     policy_text = ""
     policy_filename: Optional[str] = None
 
+    sources: list[str] = []
     if rag_available:
         embed_model = raw.app.state.embed_model
         faiss_index = raw.app.state.faiss_index
@@ -150,9 +151,10 @@ async def chat(request: ChatRequest, raw: Request):
             request.ticket_description[:300],
             request.user_message,
         ]))
-        retrieved, policy_filename = retrieve_policy(embed_model, faiss_index, policies, query)
-        if retrieved:
-            policy_text = retrieved
+        hits = retrieve_policy(embed_model, faiss_index, policies, query)
+        if hits:
+            policy_text = "\n\n---\n\n".join(text for text, _ in hits)
+            sources = [fname for _, fname in hits]
         else:
             logger.warning("/chat FAISS retrieval returned nothing.")
 
@@ -219,7 +221,7 @@ async def chat(request: ChatRequest, raw: Request):
 
         return ChatResponse(
             reply=reply_text,
-            policy_used=policy_filename,
+            sources=sources,
             context_summarized=context_summarized,
         )
 
@@ -230,178 +232,3 @@ async def chat(request: ChatRequest, raw: Request):
             detail="AI assistant is temporarily unavailable. Please try again shortly.",
         )
 
-
-
-def _summarize_old_messages(gemini_key: str, old_messages: list, ticket_description: str) -> str:
-    """Call Gemini to compress old_messages into a short narrative summary."""
-    try:
-        import google.generativeai as genai
-
-        genai.configure(api_key=gemini_key)
-        lines = []
-        for msg in old_messages:
-            prefix = "Customer" if msg.role == "customer" else "Support Assistant"
-            lines.append(f"{prefix}: {msg.content}")
-        history_text = "\n".join(lines)
-
-        prompt = (
-            f"You are summarizing an ongoing customer support conversation.\n\n"
-            f"Ticket issue: {ticket_description}\n\n"
-            f"Conversation so far:\n{history_text}\n\n"
-            f"Write a concise 2-4 sentence summary of what was discussed and any "
-            f"resolutions or information provided. Focus on facts, not pleasantries."
-        )
-        model = genai.GenerativeModel("gemini-2.5-flash")
-        response = model.generate_content(prompt)
-        return response.text.strip()
-    except Exception as e:
-        logger.warning("Context summarization failed: %s", e)
-        # Graceful fallback — include last portion as plain text
-        return " | ".join(
-            f"{'Customer' if m.role == 'customer' else 'Assistant'}: {m.content[:120]}"
-            for m in old_messages[-4:]
-        )
-
-
-def _build_prompt(
-    ticket_description: str,
-    ticket_category: Optional[str],
-    policy_text: str,
-    conversation_history: list,
-    user_message: str,
-    conversation_summary: Optional[str] = None,
-    image_analyses: Optional[list] = None,
-) -> str:
-    category_line = f"Ticket category: {ticket_category}" if ticket_category else ""
-    history_lines = []
-    for msg in conversation_history:
-        prefix = "Customer" if msg.role == "customer" else "Support Assistant"
-        history_lines.append(f"{prefix}: {msg.content}")
-
-    history_block = "\n".join(history_lines) if history_lines else "(no prior messages)"
-
-    summary_block = ""
-    if conversation_summary:
-        summary_block = f"\nSUMMARY OF EARLIER CONVERSATION:\n{conversation_summary}\n"
-
-    image_block = ""
-    if image_analyses:
-        lines = "\n".join(f"Image {i+1}: {a}" for i, a in enumerate(image_analyses))
-        image_block = f"\n══════════ ATTACHED IMAGE EVIDENCE ══════════\n{lines}\n════════════════════════════════════════════\n"
-
-    return f"""You are a restricted customer support assistant operating in POLICY-ONLY mode.
-
-CRITICAL CONSTRAINT: You MUST answer EXCLUSIVELY from the POLICY TEXT provided below.
-You are FORBIDDEN from using any general knowledge, training data, or information outside this policy.
-Treat anything not stated in the policy as unknown.
-
-TICKET CONTEXT:
-{category_line}
-Customer's original issue: {ticket_description}
-
-══════════ POLICY TEXT — YOUR ONLY KNOWLEDGE SOURCE ══════════
-{policy_text}
-══════════════════════════════════════════════════════════════
-{image_block}{summary_block}
-RECENT CONVERSATION:
-{history_block}
-
-Customer's new message: {user_message}
-
-RESPONSE RULES (follow strictly in this order):
-1. If the answer IS in the policy → explain it clearly and concisely in plain language. Use bullet points for steps. Do not quote the policy verbatim.
-2. If the answer is PARTIALLY covered → share only what the policy confirms, then add "For anything further, please contact support@company.com."
-3. If the answer is NOT in the policy → respond with ONLY: "That topic isn't covered in the policies I have access to. Please reach out to our support team at support@company.com for further assistance."
-4. NEVER guess, estimate, or infer anything not explicitly stated in the policy text above.
-5. NEVER use your general AI knowledge to fill in gaps.
-6. Respond as Support Assistant only — do not repeat the customer's message.
-7. If the customer's message references their attached images and the IMAGE EVIDENCE above contradicts or is unrelated to their claimed issue, politely note this discrepancy.
-
-Support Assistant:"""
-
-
-@router.post("", response_model=ChatResponse, summary="RAG-powered multi-turn chat for a ticket")
-async def chat(request: ChatRequest, raw: Request):
-    # --- RAG retrieval ---
-    rag_available: bool = getattr(raw.app.state, "rag_available", False)
-    policy_text = ""
-    policy_filename: Optional[str] = None
-
-    if rag_available:
-        embed_model = raw.app.state.embed_model
-        faiss_index = raw.app.state.faiss_index
-        policies = raw.app.state.policies
-        query = f"{request.ticket_description} {request.user_message}"
-        retrieved, policy_filename = retrieve_policy(embed_model, faiss_index, policies, query)
-        if retrieved:
-            policy_text = retrieved
-        else:
-            logger.warning("/chat FAISS retrieval returned nothing.")
-
-    if not policy_text:
-        policy_text = (
-            "No specific policy could be retrieved. Provide general guidance and "
-            "ask the customer to contact support@company.com for further assistance."
-        )
-
-    # --- Gemini setup ---
-    gemini_key: Optional[str] = getattr(raw.app.state, "gemini_api_key", None)
-    if not gemini_key:
-        return ChatResponse(
-            reply=(
-                "I'm sorry, the AI assistant is currently unavailable. "
-                "Please contact support@company.com for help with your issue."
-            ),
-            policy_used=policy_filename,
-        )
-
-    # --- Context management: summarize if history is too long ---
-    summary: Optional[str] = None
-    recent_history = request.conversation_history
-    context_summarized = False
-
-    if len(request.conversation_history) > HISTORY_SUMMARIZE_THRESHOLD:
-        old_msgs = request.conversation_history[:-HISTORY_FULL_KEEP]
-        recent_history = request.conversation_history[-HISTORY_FULL_KEEP:]
-        logger.info("/chat — summarizing %d old messages", len(old_msgs))
-        summary = _summarize_old_messages(gemini_key, old_msgs, request.ticket_description)
-        context_summarized = True
-
-    try:
-        import google.generativeai as genai
-
-        genai.configure(api_key=gemini_key)
-        prompt = _build_prompt(
-            ticket_description=request.ticket_description,
-            ticket_category=request.ticket_category,
-            policy_text=policy_text,
-            conversation_history=recent_history,
-            user_message=request.user_message,
-            conversation_summary=summary,
-            image_analyses=request.image_analyses or [],
-        )
-
-        model = genai.GenerativeModel("gemini-2.5-flash")
-        response = model.generate_content(prompt)
-        reply_text = response.text.strip()
-
-        logger.info(
-            "/chat — category=%s rag=%s summarized=%s reply_len=%d",
-            request.ticket_category,
-            rag_available,
-            context_summarized,
-            len(reply_text),
-        )
-
-        return ChatResponse(
-            reply=reply_text,
-            policy_used=policy_filename,
-            context_summarized=context_summarized,
-        )
-
-    except Exception as e:
-        logger.error("/chat Gemini error: %s", e, exc_info=True)
-        raise HTTPException(
-            status_code=502,
-            detail="AI assistant is temporarily unavailable. Please try again shortly.",
-        )

@@ -1,25 +1,40 @@
 import logging
 import numpy as np
-from typing import Optional, Tuple
+from typing import List, Optional, Tuple
 
 logger = logging.getLogger(__name__)
 
+TOP_K = 3  # number of KB chunks to retrieve
 
-def retrieve_policy(embed_model, faiss_index, policies: dict, description: str) -> Tuple[Optional[str], Optional[str]]:
+
+def retrieve_policy(
+    embed_model,
+    faiss_index,
+    policies: dict,
+    description: str,
+    k: int = TOP_K,
+) -> List[Tuple[str, str]]:
     """
-    Embed description and retrieve the best-matching policy from FAISS.
-    Returns (policy_text, policy_filename) or (None, None) on failure.
+    Embed description and retrieve the top-k matching policies from FAISS.
+    Returns a list of (policy_text, policy_filename) tuples, ordered by relevance.
+    Returns an empty list on failure.
     """
     try:
+        n_indexed = faiss_index.ntotal
+        k_actual = min(k, n_indexed)  # cannot retrieve more than what is indexed
         query_vector = embed_model.encode([description])
-        distances, indices = faiss_index.search(np.array(query_vector).astype("float32"), k=1)
-        best_idx = int(indices[0][0])
-        entry = policies[best_idx]
-        logger.debug("FAISS retrieved policy: %s (dist=%.4f)", entry["file"], distances[0][0])
-        return entry["text"], entry["file"]
+        distances, indices = faiss_index.search(np.array(query_vector).astype("float32"), k=k_actual)
+        results: List[Tuple[str, str]] = []
+        for rank, idx in enumerate(indices[0]):
+            entry = policies[int(idx)]
+            logger.debug(
+                "FAISS top-%d: %s (dist=%.4f)", rank + 1, entry["file"], distances[0][rank]
+            )
+            results.append((entry["text"], entry["file"]))
+        return results
     except Exception as e:
         logger.error("FAISS retrieval failed: %s", e, exc_info=True)
-        return None, None
+        return []
 
 
 def generate_reply(gemini_api_key: Optional[str], description: str, policy_text: str) -> str:

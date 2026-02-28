@@ -125,6 +125,7 @@ class PipelineResponse(BaseModel):
     urgency_score: float
     urgency_factors: UrgencyFactors
     retrieved_policy: Optional[str] = None
+    sources: list[str] = Field(default=[], description="KB filenames used to generate the reply (ordered by relevance).")
     rag_available: bool
     ai_draft_reply: str
 
@@ -171,9 +172,9 @@ class ChatRequest(BaseModel):
 
 class ChatResponse(BaseModel):
     reply: str = Field(..., description="AI-generated reply.")
-    policy_used: Optional[str] = Field(
-        default=None,
-        description="Filename of the KB policy used for retrieval.",
+    sources: list[str] = Field(
+        default=[],
+        description="KB filenames used to ground the reply (ordered by relevance).",
     )
     context_summarized: bool = Field(
         default=False,

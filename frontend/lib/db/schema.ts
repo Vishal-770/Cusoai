@@ -86,8 +86,10 @@ export const ticketMessage = pgTable("ticket_message", {
     .notNull()
     .references(() => ticket.id, { onDelete: "cascade" }),
   role: text("role").notNull(), // 'customer' | 'ai'
-  content: text("content").notNull(),
+  content: text("content").notNull(), // always English internally
+  nativeContent: text("native_content"), // original language text (null if already English)
   imageUrl: text("image_url"),
+  voiceUrl: text("voice_url"), // Cloudinary audio URL
   createdAt: timestamp("created_at").notNull(),
 });
 

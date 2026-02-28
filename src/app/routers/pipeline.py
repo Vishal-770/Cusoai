@@ -47,13 +47,17 @@ async def process_ticket(request: TicketRequest, raw: Request, response: Respons
     # Step 3: RAG retrieval — optional (degrades gracefully)
     rag_available = raw.app.state.rag_available
     policy_text: str | None = None
+    sources: list[str] = []
 
     if rag_available:
         embed_model = raw.app.state.embed_model
         faiss_index = raw.app.state.faiss_index
         policies = raw.app.state.policies
-        policy_text, _ = retrieve_policy(embed_model, faiss_index, policies, request.description)
-        if policy_text is None:
+        hits = retrieve_policy(embed_model, faiss_index, policies, request.description)
+        if hits:
+            policy_text = "\n\n---\n\n".join(text for text, _ in hits)
+            sources = [fname for _, fname in hits]
+        else:
             logger.warning("[%s] FAISS retrieval returned nothing; RAG degraded.", request_id)
             rag_available = False
 
@@ -73,6 +77,7 @@ async def process_ticket(request: TicketRequest, raw: Request, response: Respons
         urgency_score=compound,
         urgency_factors=UrgencyFactors(**urgency_factors),
         retrieved_policy=policy_text,
+        sources=sources,
         rag_available=rag_available,
         ai_draft_reply=ai_reply,
     )
