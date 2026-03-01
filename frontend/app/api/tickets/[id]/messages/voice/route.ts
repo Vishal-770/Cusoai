@@ -8,11 +8,11 @@ import { uploadAudio } from "@/lib/cloudinary";
 
 const CHAT_ACTIVE_STATUSES = ["open", "in_progress"];
 const FASTAPI_URL = process.env.FASTAPI_URL ?? "http://localhost:8000";
-const EL_KEY = process.env.ELEVENLABS_API_KEY!;
-const EL_VOICE = process.env.ELEVENLABS_VOICE_ID ?? "21m00Tcm4TlvDq8ikWAM";
 const GEMINI_KEY = process.env.GEMINI_API_KEY!;
 const GEMINI_URL =
   "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
+const GEMINI_TTS_URL =
+  "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent";
 
 // ── Gemini helper ───────────────────────────────────────────────────────────
 async function geminiGenerate(prompt: string): Promise<string> {
@@ -104,9 +104,32 @@ async function translateFromEnglish(
   );
 }
 
-// ── ElevenLabs TTS ──────────────────────────────────────────────────────────
+// ── Gemini TTS ─────────────────────────────────────────────────────────────
+function pcmToWav(pcm: Buffer): Buffer {
+  const sampleRate = 24000;
+  const numChannels = 1;
+  const bitsPerSample = 16;
+  const byteRate = (sampleRate * numChannels * bitsPerSample) / 8;
+  const blockAlign = (numChannels * bitsPerSample) / 8;
+  const dataSize = pcm.length;
+  const header = Buffer.allocUnsafe(44);
+  header.write("RIFF", 0);
+  header.writeUInt32LE(36 + dataSize, 4);
+  header.write("WAVE", 8);
+  header.write("fmt ", 12);
+  header.writeUInt32LE(16, 16);
+  header.writeUInt16LE(1, 20); // PCM
+  header.writeUInt16LE(numChannels, 22);
+  header.writeUInt32LE(sampleRate, 24);
+  header.writeUInt32LE(byteRate, 28);
+  header.writeUInt16LE(blockAlign, 32);
+  header.writeUInt16LE(bitsPerSample, 34);
+  header.write("data", 36);
+  header.writeUInt32LE(dataSize, 40);
+  return Buffer.concat([header, pcm]);
+}
+
 async function synthesizeSpeech(text: string): Promise<Buffer> {
-  // Strip markdown formatting for cleaner TTS
   const plainText = text
     .replace(/\*\*(.+?)\*\*/g, "$1")
     .replace(/\*(.+?)\*/g, "$1")
@@ -114,29 +137,41 @@ async function synthesizeSpeech(text: string): Promise<Buffer> {
     .replace(/^\d+\.\s/gm, "")
     .trim();
 
-  const res = await fetch(
-    `https://api.elevenlabs.io/v1/text-to-speech/${EL_VOICE}`,
-    {
-      method: "POST",
-      headers: {
-        "xi-api-key": EL_KEY,
-        "Content-Type": "application/json",
+  const res = await fetch(`${GEMINI_TTS_URL}?key=${GEMINI_KEY}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      contents: [{ parts: [{ text: plainText.slice(0, 2500) }] }],
+      generationConfig: {
+        responseModalities: ["AUDIO"],
+        speechConfig: {
+          voiceConfig: {
+            prebuiltVoiceConfig: { voiceName: "Aoede" },
+          },
+        },
       },
-      body: JSON.stringify({
-        text: plainText.slice(0, 2500), // ElevenLabs limit
-        model_id: "eleven_multilingual_v2",
-        voice_settings: { stability: 0.5, similarity_boost: 0.75 },
-      }),
-      signal: AbortSignal.timeout(40_000),
-    },
-  );
+    }),
+    signal: AbortSignal.timeout(40_000),
+  });
 
   if (!res.ok) {
     const err = await res.text().catch(() => "");
-    throw new Error(`ElevenLabs TTS failed (${res.status}): ${err}`);
+    throw new Error(`Gemini TTS failed (${res.status}): ${err}`);
   }
 
-  return Buffer.from(await res.arrayBuffer());
+  const data = (await res.json()) as {
+    candidates?: {
+      content?: {
+        parts?: { inlineData?: { data?: string; mimeType?: string } }[];
+      };
+    }[];
+  };
+
+  const base64Audio =
+    data.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data;
+  if (!base64Audio) throw new Error("Gemini TTS returned no audio data");
+
+  return pcmToWav(Buffer.from(base64Audio, "base64"));
 }
 
 // ── Route handler ───────────────────────────────────────────────────────────

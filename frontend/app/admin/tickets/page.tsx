@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ImageIcon, Trash2 } from "lucide-react";
+import { ImageIcon, Trash2, XCircle } from "lucide-react";
 
 type AdminTicket = {
   id: string;
@@ -54,6 +54,47 @@ export default function AdminTicketsPage() {
   const [category, setCategory] = useState("");
   const [forbidden, setForbidden] = useState(false);
   const [deleting, setDeleting] = useState<string | null>(null);
+  const [closingId, setClosingId] = useState<string | null>(null);
+  const [closeReason, setCloseReason] = useState("");
+  const [closeError, setCloseError] = useState<string | null>(null);
+  const [closeLoading, setCloseLoading] = useState(false);
+
+  async function handleCloseConfirm() {
+    if (!closingId) return;
+    const trimmed = closeReason.trim();
+    if (!trimmed) {
+      setCloseError("Please enter a reason.");
+      return;
+    }
+    setCloseLoading(true);
+    setCloseError(null);
+    try {
+      const res = await fetch(`/api/tickets/${closingId}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ reason: trimmed }),
+      });
+      if (res.ok) {
+        setData((prev) =>
+          prev
+            ? {
+                ...prev,
+                tickets: prev.tickets.map((t) =>
+                  t.id === closingId ? { ...t, status: "closed" } : t,
+                ),
+              }
+            : prev,
+        );
+        setClosingId(null);
+        setCloseReason("");
+      } else {
+        const data = await res.json();
+        setCloseError(data.error ?? "Failed to close ticket.");
+      }
+    } finally {
+      setCloseLoading(false);
+    }
+  }
 
   async function handleDelete(id: string) {
     if (!confirm("Delete this ticket? This cannot be undone.")) return;
@@ -106,6 +147,12 @@ export default function AdminTicketsPage() {
     };
   }, [page, status, urgency, category, router]);
 
+  function openCloseModal(id: string) {
+    setClosingId(id);
+    setCloseReason("");
+    setCloseError(null);
+  }
+
   if (forbidden) {
     return (
       <div className="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center gap-4">
@@ -122,6 +169,69 @@ export default function AdminTicketsPage() {
 
   return (
     <div className="min-h-[calc(100vh-4rem)] bg-background">
+      {/* ── Close Ticket Modal ── */}
+      {closingId && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4"
+          onClick={() => {
+            setClosingId(null);
+            setCloseReason("");
+            setCloseError(null);
+          }}
+        >
+          <div
+            className="w-full max-w-md rounded-xl border bg-background p-6 shadow-lg space-y-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center gap-2">
+              <XCircle className="h-5 w-5 text-destructive" />
+              <h2 className="text-base font-semibold">Close Ticket</h2>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              Provide a reason for closing this ticket. This will be visible to
+              the customer.
+            </p>
+            <textarea
+              autoFocus
+              rows={4}
+              placeholder="e.g. Issue resolved — refund processed on 6 Mar 2026."
+              value={closeReason}
+              onChange={(e) => {
+                setCloseReason(e.target.value);
+                setCloseError(null);
+              }}
+              className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring resize-none"
+            />
+            {closeError && (
+              <p className="text-xs text-destructive">{closeError}</p>
+            )}
+            <div className="flex justify-end gap-2">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => {
+                  setClosingId(null);
+                  setCloseReason("");
+                  setCloseError(null);
+                }}
+                disabled={closeLoading}
+              >
+                Cancel
+              </Button>
+              <Button
+                size="sm"
+                variant="destructive"
+                onClick={handleCloseConfirm}
+                disabled={closeLoading}
+                className="gap-1.5"
+              >
+                <XCircle className="h-4 w-4" />
+                {closeLoading ? "Closing…" : "Close Ticket"}
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
       <main className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 space-y-6">
         <div className="flex items-center justify-between">
           <div>
@@ -277,15 +387,28 @@ export default function AdminTicketsPage() {
                         className="px-4 py-3"
                         onClick={(e) => e.stopPropagation()}
                       >
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          className="h-7 w-7 p-0 text-destructive hover:text-destructive"
-                          disabled={deleting === t.id}
-                          onClick={() => handleDelete(t.id)}
-                        >
-                          <Trash2 className="h-4 w-4" />
-                        </Button>
+                        <div className="flex items-center gap-1">
+                          {t.status !== "closed" && (
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              className="h-7 w-7 p-0 text-muted-foreground hover:text-foreground"
+                              title="Close ticket"
+                              onClick={() => openCloseModal(t.id)}
+                            >
+                              <XCircle className="h-4 w-4" />
+                            </Button>
+                          )}
+                          <Button
+                            variant="ghost"
+                            size="sm"
+                            className="h-7 w-7 p-0 text-destructive hover:text-destructive"
+                            disabled={deleting === t.id}
+                            onClick={() => handleDelete(t.id)}
+                          >
+                            <Trash2 className="h-4 w-4" />
+                          </Button>
+                        </div>
                       </td>
                     </tr>
                   ))}

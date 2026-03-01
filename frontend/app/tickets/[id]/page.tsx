@@ -7,7 +7,13 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { ImageIcon, Bot, ArrowLeft, MessageSquare } from "lucide-react";
+import {
+  ImageIcon,
+  Bot,
+  ArrowLeft,
+  MessageSquare,
+  XCircle,
+} from "lucide-react";
 
 type TicketDetail = {
   id: string;
@@ -19,6 +25,8 @@ type TicketDetail = {
   urgencyScore: number | null;
   aiDraft: string | null;
   status: string;
+  closedReason: string | null;
+  closedAt: string | null;
   createdAt: string;
   images: { id: string; cloudinaryUrl: string; cloudinaryPublicId: string }[];
 };
@@ -210,6 +218,28 @@ export default function TicketDetailPage({
               <p className="text-sm whitespace-pre-wrap text-muted-foreground">
                 {ticket.aiDraft}
               </p>
+            </CardContent>
+          </Card>
+        )}
+
+        {/* Closed Reason */}
+        {ticket.status === "closed" && ticket.closedReason && (
+          <Card className="border-destructive/30 bg-destructive/5">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-sm font-medium text-destructive uppercase tracking-wide">
+                <XCircle className="h-4 w-4" />
+                Ticket Closed
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-1">
+              <p className="text-sm whitespace-pre-wrap">
+                {ticket.closedReason}
+              </p>
+              {ticket.closedAt && (
+                <p className="text-xs text-muted-foreground">
+                  Closed on {new Date(ticket.closedAt).toLocaleString()}
+                </p>
+              )}
             </CardContent>
           </Card>
         )}

@@ -65,6 +65,9 @@ export const ticket = pgTable("ticket", {
   urgencyScore: real("urgency_score"),
   aiDraft: text("ai_draft"),
   status: text("status").notNull().default("open"),
+  closedReason: text("closed_reason"),
+  closedAt: timestamp("closed_at"),
+  closedBy: text("closed_by"),
   createdAt: timestamp("created_at").notNull(),
   updatedAt: timestamp("updated_at").notNull(),
 });
