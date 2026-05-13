@@ -1,4 +1,4 @@
-# SupportDesk — AI-Powered Customer Support Triage
+# Cusoai— AI-Powered Customer Support Triage
 
 > A full-stack intelligent customer support platform. Customers submit tickets in any language via text, image, or voice. A six-component ML pipeline classifies the issue, scores urgency, retrieves the relevant policy, and drafts a grounded reply — all in under 2 seconds, before any human agent opens the ticket.
 
