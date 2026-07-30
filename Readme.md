@@ -9,15 +9,7 @@
 
 ---
 
-## Demo
 
-https://github.com/user-attachments/assets/your-video-id-here
-
-> Full walkthrough: ticket submission (text + image + voice) → ML triage → RAG-grounded reply → voice response playback.
->
-> **To embed:** Upload `SupportDesk — Customer Support Portal - Brave 2026-03-06 11-41-05.mp4` by dragging it into any GitHub issue or PR comment box — GitHub will generate a `user-attachments/assets/` URL. Replace the placeholder URL above with that link.
-
----
 
 ## The Problem
 
